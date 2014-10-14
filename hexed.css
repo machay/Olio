@@ -8,3 +8,10 @@
     border-radius: 50%;
     background: #4679BD;
 }
+
+#Score {
+	font-size: 50px;
+	margin-top: 300px;
+	margin-left: 620px;
+
+}
