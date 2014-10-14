@@ -3,7 +3,9 @@
 	<head>
 		<title>Hexed!</title>
 		<body>
-			<header>Hexed!</header>
+			<header>Hexed!
+			<link type="text/css" href="easydropdown.flat.css"/>
+			</header>
 			<p class="rules">
 				Try to come as close as you can to guessing each hex value on the left circle by adjusting the hex values on the right circle. 
 				Once you've come close enough, press the "Got It!" button. 
@@ -11,8 +13,8 @@
 			</p>
 			<div class="circle"></div>
 			<div class="circle"></div>
-			<p>Difficulty</p>
 			<select class="dropdown">
+				<option value="" class="label">Difficulty</option>
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -24,8 +26,8 @@
 				<option value="9">9</option>
 				<option value="10">10</option>
 			</select>
-			<p>Rounds</p>
 			<select class="dropdown">
+				<option value="" class="label">Rounds</option>
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -37,7 +39,7 @@
 				<option value="9">9</option>
 				<option value="10">10</option>
 			</select>
-
 		</body>
 	</head>
+<script type="text/javascript" src="jquery.easydropdown.min.js"></script>
 </html>
