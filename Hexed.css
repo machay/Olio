@@ -1,0 +1,130 @@
+/*Stylizing sliders*/
+#redSlider, #greenSlider, #blueSlider {
+  float: left;
+  height: 200px;
+}
+
+#redSlider .ui-slider-range { background: red; }
+#redSlider .ui-slider-handle { border-color: red; }
+#greenSlider .ui-slider-range { background: green; }
+#greenSlider .ui-slider-handle { border-color: green; }
+#blueSlider .ui-slider-range { background: blue; }
+#blueSlider .ui-slider-handle { border-color: blue; }
+
+/*Stylizing hexValue boxes*/
+#redValue, #greenValue, #blueValue {
+  background-color: white;
+  border: 1px lightgray solid;
+  border-radius: 10px;
+  display: inline;
+  position: relative;
+  top: 250px;
+  left: -259px;
+  margin-right: 55px;
+  padding: 10px;
+  width: 20px;
+}
+
+/*Positioning the buttons*/
+#buttons {
+  position: relative;
+  left: 290px;
+  width: 120px;
+  height: 90px;
+}
+
+#start, #guess, #next {
+  position: absolute;
+}
+
+#start {
+  top: 3px;
+  left: 21px;
+}
+#guess {
+  top: 33px;
+  left: 37px;
+}
+#next {
+  top: 63px;
+  left: 40px;
+}
+
+/*Positioning the settings*/
+#settings {
+  float: left;
+  position: relative;
+  width: 150px;
+  top: -115px;
+  left: 200px;
+}
+
+#turns {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+#difficulty {
+  width: 19px;
+}
+
+/*Positioning the swatches and the captions*/
+#swatch {
+  width: 120px;
+  height: 100px;
+  position: relative;
+  left: 255px;
+  border: 1px lightgray solid;
+}
+
+#myswatch {
+  position: relative;
+  width: 60px;
+  height: 100px;
+  top: -16px;
+  left: -40px;
+  border-right: 1px white solid;
+}
+
+#oneswatch, #twoswatch {
+  position: relative;
+  font-size: 10px;
+}
+
+#oneswatch {
+  position: relative;
+  left: 326px;
+  top: -10px;
+}
+
+#twoswatch {
+  position: relative;
+  left: 296px;
+  top: -10px;
+}
+
+/*Stylizing the results container and its elements*/
+#results {
+  border: 1px lightgray solid;
+  border-radius: 10px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -190px;
+  left: 450px;
+}
+
+#score {
+  margin: 0;
+  text-align: center;
+}
+
+#percents {
+  padding-left: 5px;
+  position: relative;
+  top: -20px;
+}
+
+#again {
+  margin-left: 52px;
+}
