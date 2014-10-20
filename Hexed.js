@@ -50,8 +50,6 @@
               //Swatch elements: User swatch on left, desired swatch on right
               $(this).append('<figure id="swatch"></figure>');
               $('#swatch').append('<figure id="myswatch"></figure>');
-              $(this).append('<figcaption for="swatch" id="oneswatch">Desired Swatch</ficaption>');
-              $(this).append("<figcaption for='myswatch' id='twoswatch'>User's Swatch | Desired Swatch</ficaption>");
               $('#twoswatch').hide();
               
               //Results element
@@ -126,7 +124,7 @@
                 b = blue;
                 //"hides" the user swatch by setting it to the same hex color.
                 hex = hexFromRGB (r, g, b);
-                $("#myswatch").css("background-color", "#" + hex);
+                $("#myswatch").css("background-color", "#00000");
                 return;
               }
               /*End hex functions*/
