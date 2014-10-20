@@ -13,18 +13,15 @@
           return this.each(function() {
               
               /*Creating variables for game*/
-              
               //Used to keep track of game progress.
               var inprogress = false;
               var guessedit = false;
               var turns, score, r, g, b, start;
               var diff = options.difficulty;
-              
               /*End variables*/
               
               
               /*Creating HTML elements*/
-              
               //Slider elements
               $(this).append('<section id="sliders"></section>');
               $('#sliders').append('<figure id="redSlider"></figure>');
@@ -64,12 +61,10 @@
               //hiding 'Play again?' button until end of game.
               $('#again').hide();
               $('#results').append('<p id="percents"></p>');
-              
               /*End creating HTML elements.*/
               
               
               /*Creating hex functions*/
-              
               //Changes RGB to hex value. Directly from Simple Colorpicker UI
               function hexFromRGB(r, g, b) {
                 var hex = [
@@ -134,12 +129,10 @@
                 $("#myswatch").css("background-color", "#" + hex);
                 return;
               }
-              
               /*End hex functions*/
               
               
               /*Creating sliders and adding functionality*/
-              
               //Creates the sliders and includes hexRefresh to update hex Values.
               $('#redSlider, #greenSlider, #blueSlider').slider({
                   orientation: "vertical",
@@ -181,15 +174,13 @@
                 $('#blueSlider').slider("value", 0);
                 
               }
-              
               /*End creating sliders*/
               
               
               /*Functions involving the score*/
-              
               //Updates the score and returns percentages.
-              function updateScore(duration) {
-                if (duration == -1) {
+              function updateScore(milliseconds_taken) {
+                if (milliseconds_taken == -1) {
                   $('#score').html("Score: " + score);
                   return [-1, -1, -1];
                 }
@@ -200,7 +191,7 @@
                   var percentOff = (absRed + absGreen + absBlue) / 3;
                   
                   var ratio = (15 - diff - percentOff)/(15 - diff);
-                  var difference = 15000 - duration;
+                  var difference = 15000 - milliseconds_taken;
                   var thisScore = Math.floor( ratio * difference );
                   if (ratio < 0 || difference < 0 || thisScore < 0) {
                     thisScore = 0;
@@ -224,12 +215,10 @@
                   $('#start').click();
                   alert('New game started!');
               });
-              
               /*End functions involving the score*/
               
               
               /*Buttons function calls when clicked*/
-              
               //When clicked, the start function initializes a new game.
               $('#start').click(function() {
                   inprogress = true;
@@ -255,8 +244,8 @@
               $('#guess').click(function() {
                   //Check to make sure game is running and user did not already guess once.
                   if (inprogress && (guessedit === false)) {
-                    var duration = new Date().getTime() - start;
-                    var a = updateScore(duration);
+                    var milliseconds_taken = new Date().getTime() - start;
+                    var a = updateScore(milliseconds_taken);
                     $('#percents').html('Percent off for red: ' + a[0]);
                     $('#percents').append('%<br>Percent off for green: ' + a[1]);
                     $('#percents').append('%<br>Percent off for blue: ' + a[2] + '%');
