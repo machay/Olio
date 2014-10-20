@@ -122,7 +122,7 @@
                 r = red;
                 g = green;
                 b = blue;
-                //"hides" the user swatch by setting it to the same hex color.
+                //User's swatch will be black until a slider is moved.
                 hex = hexFromRGB (r, g, b);
                 $("#myswatch").css("background-color", "#00000");
                 return;
