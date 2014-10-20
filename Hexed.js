@@ -8,8 +8,8 @@
           var defaults = {
             turns: 10,
             difficulty: 5
-          }
-          var options = $.extend(defaults, options)
+          };
+          var options = $.extend(defaults, options);
           return this.each(function() {
               
               /*Creating variables for game*/
@@ -26,44 +26,44 @@
               /*Creating HTML elements*/
               
               //Slider elements
-              $(this).append('<section id="sliders"></section>')
-              $('#sliders').append('<figure id="redSlider"></figure>')
-              $('#sliders').append('<figure id="greenSlider"></figure>')
-              $('#sliders').append('<figure id="blueSlider"></figure>')
+              $(this).append('<section id="sliders"></section>');
+              $('#sliders').append('<figure id="redSlider"></figure>');
+              $('#sliders').append('<figure id="greenSlider"></figure>');
+              $('#sliders').append('<figure id="blueSlider"></figure>');
               
               //hexValue elements
-              $(this).append('<form id="hexValues"></form>')
-              $('#hexValues').append('<input type="text" id="redValue">')
-              $('#hexValues').append('<input type="text" id="greenValue">')
-              $('#hexValues').append('<input type="text" id="blueValue">')
+              $(this).append('<form id="hexValues"></form>');
+              $('#hexValues').append('<input type="text" id="redValue">');
+              $('#hexValues').append('<input type="text" id="greenValue">');
+              $('#hexValues').append('<input type="text" id="blueValue">');
               
               //Buttons: start, guess, and next
-              $(this).append('<section id="buttons"></section>')
-              $('#buttons').append('<button type="button" id="start">Start Game</button>')
-              $('#buttons').append('<button type="button" id="guess">Got It!</button>')
-              $('#buttons').append('<button type="button" id="next">Next</button>')
+              $(this).append('<section id="buttons"></section>');
+              $('#buttons').append('<button type="button" id="start">Start Game</button>');
+              $('#buttons').append('<button type="button" id="guess">Got It!</button>');
+              $('#buttons').append('<button type="button" id="next">Next</button>');
               
               //Settings: turns and difficulty
-              $(this).append('<section id="settings"></section>')
-              $('#settings').append('<label for="turns">Number of turns: </label>')
-              $('#settings').append('<input type="text" id="turns" min="0" value="' + options.turns + '">')
-              $('#settings').append('<label for="difficulty">Difficulty (1 - 10): </label>')
-              $('#settings').append('<input type="text" id="difficulty" min="0" max="10" value="' + options.difficulty + '">')
+              $(this).append('<section id="settings"></section>');
+              $('#settings').append('<label for="turns">Number of turns: </label>');
+              $('#settings').append('<input type="text" id="turns" min="0" value="' + options.turns + '">');
+              $('#settings').append('<label for="difficulty">Difficulty (1 - 10): </label>');
+              $('#settings').append('<input type="text" id="difficulty" min="0" max="10" value="' + options.difficulty + '">');
               
               //Swatch elements: User swatch on left, desired swatch on right
-              $(this).append('<figure id="swatch"></figure>')
-              $('#swatch').append('<figure id="myswatch"></figure>')
-              $(this).append('<figcaption for="swatch" id="oneswatch">Desired Swatch</ficaption>')
-              $(this).append("<figcaption for='myswatch' id='twoswatch'>User's Swatch | Desired Swatch</ficaption>")
-              $('#twoswatch').hide()
+              $(this).append('<figure id="swatch"></figure>');
+              $('#swatch').append('<figure id="myswatch"></figure>');
+              $(this).append('<figcaption for="swatch" id="oneswatch">Desired Swatch</ficaption>');
+              $(this).append("<figcaption for='myswatch' id='twoswatch'>User's Swatch | Desired Swatch</ficaption>");
+              $('#twoswatch').hide();
               
               //Results element
-              $(this).append('<section id="results"></section>')
-              $('#results').append('<p id="score"></p>')
-              $('#results').append('<br><button type="button" id="again">Play Again?</button>')
+              $(this).append('<section id="results"></section>');
+              $('#results').append('<p id="score"></p>');
+              $('#results').append('<br><button type="button" id="again">Play Again?</button>');
               //hiding 'Play again?' button until end of game.
-              $('#again').hide()
-              $('#results').append('<p id="percents"></p>')
+              $('#again').hide();
+              $('#results').append('<p id="percents"></p>');
               
               /*End creating HTML elements.*/
               
@@ -76,13 +76,13 @@
                   r.toString(16),
                   g.toString(16),
                   b.toString(16)
-                ]
+                ];
                 $.each(hex, function(nr, val) {
                   if (val.length === 1) {
                     hex[nr] = "0" + val;
                   }
-                })
-                return hex.join( "" ).toUpperCase()
+                });
+                return hex.join( "" ).toUpperCase();
               }
               
               //Shows user's swatch color. Directly from Simple Colorpicker UI
@@ -90,19 +90,19 @@
                 var red = $("#redSlider").slider("value"),
                   green = $("#greenSlider").slider("value"),
                   blue = $("#blueSlider").slider("value"),
-                  hex = hexFromRGB( red, green, blue )
+                  hex = hexFromRGB( red, green, blue );
                 $("#myswatch").css("background-color", "#" + hex);
               }
               
               //Will update the hex values in textboxes when slider is changed.
               //Based off of Simple Colorpicker UI
               function hexRefresh() {
-                if (inprogress == false) {
+                if (inprogress === false) {
                   return;
                 }
                 var red = $( "#redSlider" ).slider( "value" ),
                     green = $( "#greenSlider" ).slider( "value" ),
-                    blue = $( "#blueSlider" ).slider( "value" )
+                    blue = $( "#blueSlider" ).slider( "value" );
                 var hex = [
                   red.toString(16),
                   green.toString(16),
@@ -117,15 +117,15 @@
                 $("#redValue").val(hex[0].toUpperCase());
                 $("#greenValue").val(hex[1].toUpperCase());
                 $("#blueValue").val(hex[2].toUpperCase());
-              };
+              }
               
               //Variation on Simple Colorpicker UI's refreshSwatch to generate random swatch.
               function randomSwatch() {
                 var red = Math.floor( (Math.random()*255) + 1 ),
                     green = Math.floor( (Math.random()*255) + 1 ),
-                    blue = Math.floor( (Math.random()*255) + 1 )
+                    blue = Math.floor( (Math.random()*255) + 1 );
                 var hex = hexFromRGB (red, green, blue);
-                $("#swatch").css("background-color", "#" + hex);       
+                $("#swatch").css("background-color", "#" + hex);
                 r = red;
                 g = green;
                 b = blue;
@@ -133,7 +133,7 @@
                 hex = hexFromRGB (r, g, b);
                 $("#myswatch").css("background-color", "#" + hex);
                 return;
-              };
+              }
               
               /*End hex functions*/
               
@@ -154,21 +154,21 @@
               //Updates the sliders to reflect changes in textboxes.
               $('#redValue').change(function() {
                   var value = this.value;
-                  if (value == "") {
+                  if (value === "") {
                     value = 0;
                   }
                   $("#redSlider").slider("value", parseInt(value, 16));
               });
               $('#greenValue').change(function() {
                   var value = this.value;
-                  if (value == "") {
+                  if (value === "") {
                     value = 0;
                   }
                   $("#greenSlider").slider("value", parseInt(value, 16));
               });
               $('#blueValue').change(function() {
                   var value = this.value;
-                  if (value == "") {
+                  if (value === "") {
                     value = 0;
                   }
                   $("#blueSlider").slider("value", parseInt(value, 16));
@@ -180,7 +180,7 @@
                 $('#greenSlider').slider("value", 0);
                 $('#blueSlider').slider("value", 0);
                 
-              };
+              }
               
               /*End creating sliders*/
               
@@ -210,14 +210,14 @@
                   $('#score').append('<br>You just earned ' + thisScore + ' for this round!');
                   return [absRed, absGreen, absBlue];
                 }
-              };
+              }
               
               //Displays final score and shows the play again? button.
               function finalScore() {
                 $('#score').html('Final Score: ' + score);
                 $('#again').show();
                 $('#percents').html('');
-              };
+              }
               
               //When the play again? button is clicked, it initalizes the function of 'start'
               $('#again').click(function() {
@@ -253,7 +253,7 @@
               //When clicked, the guess function updates user's score.
               $('#guess').click(function() {
                   //Check to make sure game is running and user did not already guess once.
-                  if (inprogress && (guessedit == false)) {
+                  if (inprogress && (guessedit === false)) {
                     var duration = new Date().getTime() - start;
                     var a = updateScore(duration);
                     $('#percents').html('Percent off for red: ' + a[0]);
@@ -271,7 +271,7 @@
                     turns = turns - 1;
                     $('#turns').val(turns);
                     resetSliders();
-                    if (turns == 0) {
+                    if (turns === 0) {
                       inprogress = false;
                       finalScore();
                       return;
