@@ -246,6 +246,7 @@
                   start = new Date().getTime();
                   //creates new hex color swatch.
                   randomSwatch();
+                  showSwatch();
                   //hides play again button in case it was not hidden.
                   $('#again').hide();
               });
