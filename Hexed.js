@@ -183,12 +183,12 @@
                   return [-1, -1, -1];
                 }
                 else {
-                  var absRed = (Math.abs(r - $('#redSlider').slider("value")) / r) * 100;
-                  var absGreen = (Math.abs(g - $('#greenSlider').slider("value")) / g) * 100;
-                  var absBlue = (Math.abs(b - $('#blueSlider').slider("value")) / b) * 100;
-                  var percentOff = (absRed + absGreen + absBlue) / 3;
+                  var absRed = (Math.abs(r - $('#redSlider').slider("value")) / 255) * 100;
+                  var absGreen = (Math.abs(g - $('#greenSlider').slider("value")) / 255) * 100;
+                  var absBlue = (Math.abs(b - $('#blueSlider').slider("value")) / 255) * 100;
+                  var percent_off = (absRed + absGreen + absBlue) / 3;
                   
-                  var ratio = (15 - diff - percentOff)/(15 - diff);
+                  var ratio = (15 - diff - percent_off)/(15 - diff);
                   var difference = 15000 - milliseconds_taken;
                   var thisScore = Math.floor( ratio * difference );
                   if (ratio < 0 || difference < 0 || thisScore < 0) {
