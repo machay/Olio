@@ -3,17 +3,18 @@
   padding-left: 290px;
   font-size: 100px;
 }
-
+/*Styling the demonic instructions */
 .instructions {
   font-size: 20px;
+  color: Red;
 }
 
-/*Sliders*/
+/*Slider generation */
 #redSlider, #greenSlider, #blueSlider {
   float: left;
   height: 300px;
 }
-
+/*Slider styling as modeled by SimpleColorPicker UI */
 #redSlider .ui-slider-range { background: red; }
 #redSlider .ui-slider-handle { border-color: red; }
 #greenSlider .ui-slider-range { background: green; }
@@ -21,7 +22,7 @@
 #blueSlider .ui-slider-range { background: blue; }
 #blueSlider .ui-slider-handle { border-color: blue; }
 
-/*hexValue boxes*/
+/*hexValue box creation*/
 #redValue, #greenValue, #blueValue {
   border: 1px black solid;
   border-radius: 10px;
@@ -41,33 +42,33 @@
   width: 120px;
   height: 90px;
 }
+/*Subdirectives for each button to get their parameters *exactly* correct */
 
 #start, #guess, #next {
   position: absolute;
 }
 
 #start {
-  top: 3px;
   left: 31px;
 }
 #guess {
-  top: 33px;
+  top: 45px;
   left: 47px;
 }
 #next {
-  top: 63px;
+  top: 75px;
   left: 50px;
 }
 
 /*Positioning the settings*/
 #settings {
-  float: left;
+  float:left;
   position: relative;
+  top: -100px;
   width: 150px;
-  top: 20px;
   left: 300px;
 }
-
+/*More subdirectives! */
 #turns {
   width: 25px;
   margin-bottom: 5px;
@@ -101,7 +102,7 @@
   top: -10px;
 }
 
-#twoswatch {
+#twoswatch { /* red swatch, blue swatch? */
   position: relative;
   left: 296px;
   top: -10px;
@@ -116,6 +117,7 @@
   top: -220px;
   left: 550px;
 }
+/* Subdierectives for the results container elements */
 
 #score {
   margin: 0;
