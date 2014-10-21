@@ -1,27 +1,26 @@
-// This indicates pseudocode
-/* This indicates related sections of code*/
 
-//Creating hexed plugin utilizing format from referenced site in README.txt
+//And here, our grand function begins, using some elements from SimpleColorPickerUI, a jQuery application/module library
+//that included many of the elements needed for our implementation.
 (function ($) {
     $.fn.extend({
+      //Initialize default settings
         hexed: function (options) {
           var defaults = {
             turns: 10,
             difficulty: 5
-          };
+          }; 
+          //Create the options container infrastructure
           var options = $.extend(defaults, options);
           return this.each(function() {
               
-              /*Creating variables for game*/
-              //Used to keep track of game progress.
+              //Game variable initialization
               var inprogress = false;
               var guessedit = false;
               var turns, score, r, g, b, start;
               var diff = options.difficulty;
-              /*End variables*/
               
               
-              /*Creating HTML elements*/
+              //HTML Construction Zone
               //Slider elements
               $(this).append('<section id="sliders"></section>');
               $('#sliders').append('<figure id="redSlider"></figure>');
@@ -55,15 +54,13 @@
               //Results element
               $(this).append('<section id="results"></section>');
               $('#results').append('<p id="score"></p>');
-              $('#results').append('<br><button type="button" id="again">Play Again?</button>');
-              //hiding 'Play again?' button until end of game.
+              $('#results').append('<br><button type="button" id="again">Play Again??</button>');
+              //Keeping the ''Play Again?'?' option hidden until the user finishes their game
               $('#again').hide();
               $('#results').append('<p id="percents"></p>');
-              /*End creating HTML elements.*/
               
-              
-              /*Creating hex functions*/
-              //Changes RGB to hex value. Directly from Simple Colorpicker UI
+              //Hex and color functions
+              //Changes RGB to hex value. Directly from SimpleColorPicker UI
               function hexFromRGB(r, g, b) {
                 var hex = [
                   r.toString(16),
@@ -78,7 +75,7 @@
                 return hex.join( "" ).toUpperCase();
               }
               
-              //Shows user's swatch color. Directly from Simple Colorpicker UI
+              //Shows user's swatch color. Directly from SimpleColorPicker UI
               function showSwatch() {
                 var red = $("#redSlider").slider("value"),
                   green = $("#greenSlider").slider("value"),
@@ -88,7 +85,7 @@
               }
               
               //Will update the hex values in textboxes when slider is changed.
-              //Based off of Simple Colorpicker UI
+              //Based off of SimpleColorPicker UI
               function hexRefresh() {
                 if (inprogress === false) {
                   return;
@@ -105,14 +102,14 @@
                   if ( val.length === 1 ) {
                     hex[nr] = "0" + val;
                   }
-                showSwatch();
+                showSwatch(); //We spent an hour here because we forgot that one update function call -.-
                 });
                 $("#redValue").val(hex[0].toUpperCase());
                 $("#greenValue").val(hex[1].toUpperCase());
                 $("#blueValue").val(hex[2].toUpperCase());
               }
               
-              //Variation on Simple Colorpicker UI's refreshSwatch to generate random swatch.
+              //Variation on SimpleColorPicker UI's refreshSwatch to generate random swatch
               function randomSwatch() {
                 var red = Math.floor( (Math.random()*255) + 1 ),
                     green = Math.floor( (Math.random()*255) + 1 ),
@@ -122,16 +119,15 @@
                 r = red;
                 g = green;
                 b = blue;
-                //User's swatch will be black until a slider is moved.
+                //User's swatch will be black (hex value #000000) until a slider is moved
                 hex = hexFromRGB (r, g, b);
                 $("#myswatch").css("background-color", "#00000");
                 return;
               }
-              /*End hex functions*/
               
               
-              /*Creating sliders and adding functionality*/
-              //Creates the sliders and includes hexRefresh to update hex Values.
+              //Slider Building Zone!
+              //Creates the sliders and includes hexRefresh to update hex Values
               $('#redSlider, #greenSlider, #blueSlider').slider({
                   orientation: "vertical",
                   range: "min",
@@ -142,7 +138,7 @@
                   change: hexRefresh
               });
               
-              //Updates the sliders to reflect changes in textboxes.
+              //Updates the sliders to reflect changes in textboxes
               $('#redValue').change(function() {
                   var value = this.value;
                   if (value === "") {
@@ -165,18 +161,16 @@
                   $("#blueSlider").slider("value", parseInt(value, 16));
               });
               
-              //Reset sliders to 0.
+              //Reset sliders to 0
               function resetSliders() {
                 $('#redSlider').slider("value", 0);
                 $('#greenSlider').slider("value", 0);
                 $('#blueSlider').slider("value", 0);
                 
               }
-              /*End creating sliders*/
               
               
-              /*Functions involving the score*/
-              //Updates the score and returns percentages.
+              //Updates the score and returns percentages
               function updateScore(milliseconds_taken) {
                 if (milliseconds_taken == -1) {
                   $('#score').html("Score: " + score);
@@ -201,23 +195,23 @@
                 }
               }
               
-              //Displays final score and shows the play again? button.
+              //Displays final score and shows the ''Play Again?'?' button
               function finalScore() {
                 $('#score').html('Final Score: ' + score);
                 $('#again').show();
                 $('#percents').html('');
               }
               
-              //When the play again? button is clicked, it initalizes the function of 'start'
+              //Button Functionality Implementation
+
+              //When the 'Play Again?' button is clicked, we alert the user to avoid confusion/ambiguity
+              //and push the start button for them
               $('#again').click(function() {
                   $('#start').click();
                   alert('New game started!');
               });
-              /*End functions involving the score*/
-              
-              
-              /*Buttons function calls when clicked*/
-              //When clicked, the start function initializes a new game.
+
+              //When clicked, the start function initializes a new game
               $('#start').click(function() {
                   inprogress = true;
                   guessedit = false;
@@ -231,16 +225,16 @@
                   $('#oneswatch').show();
                   $('#twoswatch').hide();
                   start = new Date().getTime();
-                  //creates new hex color swatch.
+                  //creates new hex color swatch
                   randomSwatch();
                   showSwatch();
-                  //hides play again button in case it was not hidden.
+                  //hides 'Play Again?' button in case it was not hidden
                   $('#again').hide();
               });
               
-              //When clicked, the guess function updates user's score.
+              //When clicked, the guess function updates user's score
               $('#guess').click(function() {
-                  //Check to make sure game is running and user did not already guess once.
+                  //Check to make sure game is running and user did not already guess once
                   if (inprogress && (guessedit === false)) {
                     var milliseconds_taken = new Date().getTime() - start;
                     var a = updateScore(milliseconds_taken);
@@ -274,8 +268,7 @@
                     $('#twoswatch').hide();
                   }
               });
-              /*End buttons' functionality*/
           });
         }
     });
-})( jQuery );
+})( jQuery ); //All done with this mondo function!
