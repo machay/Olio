@@ -91,7 +91,7 @@ a:hover {
 }
 
 #pic img {
-	height: 160px;
+	height: auto;
 	width: 187px;
 	/*border-radius: 25px;
 	border: 6px solid;
@@ -115,7 +115,7 @@ a:hover {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 	position: relative;
-	border-color: #9BC4D1;
+	border-color: #705440;
 	background-color: white;
 }
 
