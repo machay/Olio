@@ -1,0 +1,58 @@
+#nav {
+	/*Can't seem to figure out why there's whitespace around the div*/
+	background-color: #EEE8AA;
+    padding: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+}
+
+
+#nav li {
+	margin-right: 40px;
+	padding-right: 30px;
+	display: inline;
+	font-size: 40px;
+	float: left;
+	list-style: none;
+}
+
+#name {
+	margin: 120px 0 0 150px;
+	font-size: 50px;
+	height: 100px;
+    width: 250px;
+    position: fixed;
+}
+
+#basicinfo {
+	margin: 200px 0 0 150px;
+    line-height: 30px;
+    height: 300px;
+    width:200px;
+    float:left;
+    padding:5px; 
+    border-radius: 25px;
+    border: 6px solid;
+    position: fixed;
+}
+
+#pic {
+	height: 160px;
+	width: 100px;
+}
+
+#basicinfo li {
+	list-style: none;
+}
+
+#box {
+	margin-top: 100px;
+	margin-left: 450px;
+	width: 1000px;
+	height: 500px;
+	border: 6px solid;
+	border-radius: 25px;
+	position: relative;
+
+}
