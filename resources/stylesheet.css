@@ -1,10 +1,14 @@
+body {
+	font-family: Segoe UI;
+}
+
+
 #nav {
 	/*Can't seem to figure out why there's whitespace around the div*/
 	background-color: #EEE8AA;
-    padding: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0px;
+    	padding: 30px;
+    	white-space: nowrap;
+    	overflow: hidden;
 }
 
 
@@ -19,22 +23,22 @@
 
 #name {
 	margin: 120px 0 0 150px;
-	font-size: 50px;
+	font-size: 45px;
 	height: 100px;
-    width: 250px;
-    position: fixed;
+    	width: 250px;
+    	position: fixed;
 }
 
 #basicinfo {
 	margin: 200px 0 0 150px;
-    line-height: 30px;
-    height: 300px;
-    width:200px;
-    float:left;
-    padding:5px; 
-    border-radius: 25px;
-    border: 6px solid;
-    position: fixed;
+    	line-height: 30px;
+    	height: 300px;
+    	width:200px;
+    	float:left;
+    	padding:5px; 
+    	border-radius: 25px;
+    	border: 6px solid;
+    	position: fixed;
 }
 
 #pic {
