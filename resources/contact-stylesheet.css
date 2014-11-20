@@ -1,29 +1,8 @@
-body {
-	font-family: Segoe UI;
-}
-
-#nav {
-	/*Can't seem to figure out why there's whitespace around the div*/
-	background-color: #EEE8AA;
-    padding: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0px;
-}
-
-
-#nav li {
-	margin-right: 40px;
-	padding-right: 30px;
-	display: inline;
-	font-size: 40px;
-	float: left;
-	list-style: none;
-}
-
-p {
+#info {
+	margin-top: 160px;
 	text-align: center;
-	font-size: 50px;
+	font-size: 45px;
+	padding-bottom: 30px;
 }
 
 li {
