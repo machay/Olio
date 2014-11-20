@@ -1,62 +1,125 @@
 body {
-	font-family: Segoe UI;
-}
+	font-family: 'Oswald', sans-serif;
+	width: 100%;
+	background-image: url("background.svg"), none;
 
+}
+body, ul, li {
+	padding: 0;
+	margin: 0;
+}
 
 #nav {
 	/*Can't seem to figure out why there's whitespace around the div*/
-	background-color: #EEE8AA;
-    	padding: 30px;
-    	white-space: nowrap;
-    	overflow: hidden;
+	position:fixed;
+	top: 0px;
+	display:block;
+	width: 100%;
+	background-color: #8CBD90;
+	text-align:right;
+	padding: 1em 3em;
+	z-index:100;
 }
 
 
 #nav li {
-	margin-right: 40px;
-	padding-right: 30px;
-	display: inline;
-	font-size: 40px;
-	float: left;
 	list-style: none;
+	padding-right: 3.5em;
+	display: inline;
+	font-size: 1.5em;
+	float: left;
+	line-height: 2em;
 }
 
+#logo a {
+	font-size: 1.5em;
+	color: #E0DE9F;
+}
+
+/* unvisited link */
+a:link {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* hover over link */
+a:hover {
+    text-decoration: none;
+    color: #E6CD83;
+}
+
+
+
 #name {
-	margin: 120px 0 0 150px;
+	padding:5px; 
+	margin: 20px 0 0 175px;
 	font-size: 45px;
+	text-align: center;
 	height: 100px;
-    	width: 250px;
-    	position: fixed;
+    width: 225px;
+    position: fixed;
+    color: #EA7146;
+    border-radius: 25px;
+	border: 6px solid;
+    border-color: white;
+    background-color: white;
+    /*This is for names that are too long*/
+    overflow-x: hidden;
 }
 
 #basicinfo {
-	margin: 200px 0 0 150px;
-    	line-height: 30px;
-    	height: 300px;
-    	width:200px;
-    	float:left;
-    	padding:5px; 
-    	border-radius: 25px;
-    	border: 6px solid;
-    	position: fixed;
+	margin: 100px 0 0 175px;
+	line-height: 30px;
+	height: 390px;
+	width:225px;
+	float:left;
+	padding: 5px;
+	border-radius: 25px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 6px solid;
+	position: fixed;
+	border-color: white;
+	background-color: white;
+	overflow: auto;
 }
 
-#pic {
+#pic img {
 	height: 160px;
-	width: 100px;
+	width: 187px;
+	/*border-radius: 25px;
+	border: 6px solid;
+	border-color: #9BC4D1;*/
+	margin-bottom: 10px;
 }
 
 #basicinfo li {
 	list-style: none;
+	color: #705440;
+	padding: 5px;
 }
 
 #box {
-	margin-top: 100px;
+	margin-top: 175px;
 	margin-left: 450px;
-	width: 1000px;
+	width: 950px;
 	height: 500px;
 	border: 6px solid;
 	border-radius: 25px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 	position: relative;
+	border-color: #9BC4D1;
+	background-color: white;
+}
 
+.info {
+	font-weight: bold;
+	color: #EA7146;
 }
