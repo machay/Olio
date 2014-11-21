@@ -10,16 +10,19 @@
 				<li><a href= contact.html> Contact </a></li>
 			</ul>
 
-			<div id = "name"> Name: <input type = "name" name = "name" value "name"> </div>
-			<form id = "basicinfo">
+			<form>
+			<div id = "name"> Name: <input type = "name" name = "name" value "name" required> </div>
+			<div id = "basicinfo">
 				<div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
 				<ul id = "Information">
-					<li><span class = "info"> Bio: <input type = "text" name = "institution" value "institution" placeholder = "Tell the world a bit about yourself!"> </li></span>
-					<li><span class = "info"> Institution: <input type = "text" name = "institution" value "institution"> </span>
-					<li><span class = "info">Email: </span> <input type = "text" name = "email" value "email"> </li>
+					<li><span class = "info"> Bio: <input type = "text" name = "bio" value "bio" placeholder = "Tell the world a bit about yourself!"> </li></span>
+					<li><span class = "info"> Institution: <input type = "text" name = "institution" value "institution" required> </span>
+					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email" required> </li>
 				</ul>
+				<button type = "submit"> Save Information </button>
+			</div>
 			</form>
 			<div id = "box"></div>
-			<button class = 'btn'><a> Save Portfolio </a></button>
+			<button type = "submit" class = 'btn'><a> Save Portfolio </a></button>
 		</body>
 </html>
