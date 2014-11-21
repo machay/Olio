@@ -36,6 +36,23 @@ body, ul, li {
 	color: #E0DE9F;
 }
 
+a:link {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* hover over link */
+a:hover {
+    text-decoration: none;
+    color: #E6CD83;
+}
+
 p {
 	color: #EA7146;
 	padding-top: 120px;
