@@ -1,0 +1,145 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	width: 100%;
+	background-image: url("background.svg"), none;
+
+}
+body, ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+#nav {
+	position:fixed;
+	top: 0px;
+	display:block;
+	width: 100%;
+	background-color: #8CBD90;
+	text-align:right;
+	padding: 1em 3em;
+	z-index:100;
+}
+
+
+#nav li {
+	list-style: none;
+	padding-right: 3.5em;
+	display: inline;
+	font-size: 1.5em;
+	float: left;
+	line-height: 2em;
+}
+
+#logo a {
+	font-size: 1.5em;
+	color: #E0DE9F;
+}
+
+/* unvisited link */
+a:link {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* hover over link */
+a:hover {
+    text-decoration: none;
+    color: #E6CD83;
+}
+
+#name {
+	padding:5px; 
+	margin: 20px 0 0 175px;
+	font-size: 20px;
+	text-align: center;
+	height: 100px;
+    width: 250px;
+    position: fixed;
+    color: #EA7146;
+    border-radius: 25px;
+	border: 6px solid;
+    border-color: white;
+    background-color: white;
+    /*This is for names that are too long*/
+    overflow-x: hidden;
+}
+
+#basicinfo {
+	margin: 100px 0 0 175px;
+	line-height: 30px;
+	height: 390px;
+	width:250px;
+	float:left;
+	padding: 5px;
+	border-radius: 25px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 6px solid;
+	position: fixed;
+	border-color: white;
+	background-color: white;
+	overflow: auto;
+}
+
+#pic img {
+	height: auto;
+	width: 187px;
+	margin-bottom: 10px;
+}
+
+#basicinfo li {
+	list-style: none;
+	color: #705440;
+	padding: 5px;
+}
+
+#box {
+	margin-top: 150px;
+	margin-left: 460px;
+	width: 950px;
+	height: 500px;
+	border: 6px solid;
+	border-radius: 25px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	position: relative;
+	border-color: #705440;
+	background-color: white;
+}
+
+.info {
+	font-weight: bold;
+	color: #EA7146;
+}
+
+.btn {
+  background: #3bb373;
+  background-image: -webkit-linear-gradient(top, #3bb373, #489964);
+  background-image: -moz-linear-gradient(top, #3bb373, #489964);
+  background-image: -ms-linear-gradient(top, #3bb373, #489964);
+  background-image: -o-linear-gradient(top, #3bb373, #489964);
+  background-image: linear-gradient(to bottom, #3bb373, #489964);
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  font-family: 'Oswald', sans-serif;
+  color: #4d270e;
+  font-size: 18px;
+  padding: 14px;
+  margin-top: 10px;
+  margin-left: 900px;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+input {
+	width: 250px;
+}
