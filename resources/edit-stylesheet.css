@@ -130,9 +130,10 @@ a:hover {
   border-radius: 29px;
   font-family: 'Oswald', sans-serif;
   color: #4d270e;
-  font-size: 18px;
-  padding: 14px;
+  font-size: 14px;
+  padding: 10px;
   margin-top: 10px;
+  margin-left: ;
   margin-left: 900px;
 }
 
@@ -140,6 +141,11 @@ a:hover {
   text-decoration: none;
 }
 
+#btn2.btn {
+	margin-left: 60px;
+}
+
 input {
 	width: 250px;
 }
+
