@@ -1,7 +1,7 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	width: 100%;
-	background-image: url("background.svg"), none;
+	background-image: url("background.png"), none;
 
 }
 body, ul, li {
@@ -57,7 +57,9 @@ p.titles {
 	font-size: 35px;
 	font-weight: bold;
 	color: #EA7146;
+	padding-top: 120px;
 }
+
 
 p {
 	padding: 10px 250px;
