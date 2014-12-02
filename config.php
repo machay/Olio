@@ -1,5 +1,5 @@
 <?php 
-$GLOBALS['HOSTNAME'] = 'localhost';
-$GLOBALS['DB_NAME']  = 'olio';
-$GLOBALS['DB_HOST']  = 'localhost';
+$_SESSION['HOSTNAME'] = 'localhost';
+$_SESSION['DB_NAME']  = 'olio';
+$_SESSION['DB_HOST']  = 'localhost';
 ?>
