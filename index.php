@@ -54,10 +54,8 @@
       <div id="loginattempt">
         <?php
         require_once 'config.php';   
-        require 'connect.php';
-        $GLOBALS['DB_USERNAME'] = $username;
-        $GLOBALS['DB_PASSWORD'] = $password;
-        $conn = DBconnect($GLOBALS['DB_HOST'], $GLOBALS['DB_NAME'], $GLOBALS['DB_USERNAME'], $GLOBALS['DB_PASSWORD']);
+        $_SESSION['DB_USERNAME'] = $username;
+        $conn = new MySQLi($_SESSION['DB_HOST'], $_SESSION['DB_NAME'], $_SESSION['DB_USERNAME'], $pass) or die(mysqli_error());
         if ($conn) {
           ?> <script>window.location.href = 'portfolio.html'</script> <?php
         } 
