@@ -1,4 +1,6 @@
 <?php
+require 'database.php';
+
 $ds = DIRECTORY_SEPARATOR;
 
 $storeFolder = 'uploads/';
