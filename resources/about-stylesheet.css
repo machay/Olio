@@ -1,68 +1,15 @@
-body {
-	font-family: 'Oswald', sans-serif;
-	width: 100%;
-	background-image: url("background.png"), none;
-
-}
-body, ul, li {
-	padding: 0;
-	margin: 0;
-}
-
-#nav {
-	position:fixed;
-	top: 0px;
-	display:block;
-	width: 100%;
-	background-color: #8CBD90;
-	text-align:right;
-	padding: 1em 3em;
-	z-index:100;
-}
-
-
-#nav li {
-	list-style: none;
-	padding-right: 3.5em;
-	display: inline;
-	font-size: 1.5em;
-	float: left;
-	line-height: 2em;
-}
-
-#logo a {
-	font-size: 1.5em;
-	color: #E0DE9F;
-}
-
-a:link {
-    color: #705440;
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    color: #705440;
-    text-decoration: none;
-}
-
-/* hover over link */
-a:hover {
-    text-decoration: none;
-    color: #E6CD83;
-}
-
 p.titles {
 	text-align: center;
 	font-size: 35px;
 	font-weight: bold;
-	color: #EA7146;
-	padding-top: 120px;
 }
-
 
 p {
 	padding: 10px 250px;
 	font-size: 25px;
 	text-indent: 50px;
+}
+
+#top{
+	margin-top: 140px
 }

@@ -4,17 +4,26 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1171.621px" height="784.74px" viewBox="0 0 1171.621 784.74" enable-background="new 0 0 1171.621 784.74"
 	 xml:space="preserve">
-<pattern  x="190.31" y="698.87" width="56.691" height="56.692" patternUnits="userSpaceOnUse" id="Grid_1cm_Lines" viewBox="47.505 -56.942 56.691 56.692" overflow="visible">
+<pattern  x="190.31" y="698.87" width="65.6" height="72" patternUnits="userSpaceOnUse" id="Scotch_Rule_2" viewBox="27.602 -74.4 65.6 72" overflow="visible">
 	<g>
-		<polygon fill="none" points="47.505,-0.25 47.505,-56.942 104.197,-56.942 104.197,-0.25 		"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="104.447" y1="-42.77" x2="47.255" y2="-42.77"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="38.346" y1="-42.75" x2="0" y2="-42.75"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="47.255" y1="-14.424" x2="104.447" y2="-14.424"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="0" y1="-14.403" x2="38.346" y2="-14.403"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="90.024" y1="0" x2="90.024" y2="-57.192"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="33.346" y1="-9.403" x2="33.346" y2="-47.75"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="61.678" y1="-57.192" x2="61.678" y2="0"/>
-		<line fill="none" stroke="#231F20" stroke-width="0.3" x1="5" y1="-47.75" x2="5" y2="-9.403"/>
+		<polygon fill="none" points="27.602,-2.4 27.602,-74.4 93.201,-74.4 93.201,-2.4 		"/>
+		<line fill="#AACFE2" x1="11.602" y1="-8.4" x2="17.602" y2="-2.4"/>
+		<line fill="#AACFE2" x1="11.602" y1="-2.4" x2="17.602" y2="-8.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="4.8" stroke-linecap="square" x1="44.001" y1="-2.4" x2="44.001" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="4.8" stroke-linecap="square" x1="76.802" y1="-2.4" x2="76.802" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="4.8" stroke-linecap="square" x1="11.2" y1="-61.4" x2="11.2" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="37.401" y1="-2.4" x2="37.401" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="70.201" y1="-2.4" x2="70.201" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="4.601" y1="-61.4" x2="4.601" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="33.001" y1="-2.4" x2="33.001" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="65.801" y1="-2.4" x2="65.801" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="0.2" y1="-61.4" x2="0.2" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="50.602" y1="-2.4" x2="50.602" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="83.401" y1="-2.4" x2="83.401" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="1.2" stroke-linecap="square" x1="17.801" y1="-61.4" x2="17.801" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="55.001" y1="-2.4" x2="55.001" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="87.802" y1="-2.4" x2="87.802" y2="-74.4"/>
+		<line fill="none" stroke="#B3E5E3" stroke-width="0.4" stroke-linecap="square" x1="22.202" y1="-61.4" x2="22.202" y2="-74.4"/>
 	</g>
 </pattern>
 <g id="Layer_1" display="none">
@@ -1097,13 +1106,16 @@
 	</g>
 	<g id="Layer_1_1_">
 		
-			<image display="inline" overflow="visible" enable-background="new    " width="1200" height="1200" xlink:href="7670E06E.png"  transform="matrix(1 0 0 1 24.0059 15)">
+			<image display="inline" overflow="visible" enable-background="new    " width="1200" height="1200" xlink:href="B23FCEE7.png"  transform="matrix(1 0 0 1 24.0059 15)">
 		</image>
 	</g>
 	<g id="Layer_7" display="inline">
 	</g>
 </g>
 <g id="Layer_2">
-	<rect x="-110.19" y="-39.63" fill="url(#Grid_1cm_Lines)" width="1392" height="864"/>
+	<rect x="-110.19" y="-39.63" fill="url(#Scotch_Rule_2)" width="1392" height="864"/>
+	<rect x="-283.055" y="163.973" fill="#626867" width="76.496" height="32.999"/>
+	<rect x="-283.055" y="211.485" fill="#3E4241" width="76.496" height="32.999"/>
+	<rect x="-283.055" y="119.002" fill="#E6FFFB" width="76.496" height="32.999"/>
 </g>
 </svg>

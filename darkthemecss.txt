@@ -1,7 +1,7 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background1.svg"), none;
+	background-image: url("footer_lodyas.png"), none;
 
 }
 body, ul, li {
@@ -15,7 +15,7 @@ body, ul, li {
 	top: 0px;
 	display:block;
 	width: 100%;
-	background-color: #B3E5E3;
+	background-color: #A7D2DB;
 	text-align:right;
 	padding: 0.5em 3em;
 	z-index:100;
@@ -53,13 +53,13 @@ body, ul, li {
 
 /* unvisited link */
 a:link {
-    color: #626867;
+    color: #212123;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #626867;
+    color: #212123;
     text-decoration: none;
 }
 
@@ -77,10 +77,12 @@ a:hover {
 	height: 50px;
     width: 280px;
     position: relative;
-    color: #626867;
-    background: white;
+    color: #A7D2DB;
+    background: #212123;
     border: 2px solid;
-	border-color: white;
+	border-color: #212123;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 	text-align: center;
     /*This is for names that are too long*/
     overflow-x: hidden;
@@ -96,10 +98,11 @@ a:hover {
 	float:left;
 	padding: 5px;
 	border: 4px solid;
-	border-color: white;
+	border-color: #A7D2DB;
+	border-radius: 5px;
 	position: auto;
 	overflow: auto;
-	background-color: white;
+	background-color: #212123;
 }
 
 #pic img {
@@ -107,18 +110,19 @@ a:hover {
 	height: auto;
 	width: 225px;
 	padding: 5px;
-	
 	border: 4px solid;
-	border-color: white;
+	border-color: #A7D2DB;
+	border-radius: 5px;
 	margin-bottom: 10px;
-	background-image: url("upfeathers.png"), none;
+	background-color: #212123;
+	/*background-image: url("footer_lodyas.png"), none;*/
 }
 
 #basicinfo li {
 	list-style: none;
-	color: #626867;
+	color: #A7D2DB;
 	padding: 5px;
-	text-shadow: 2px 2px 8px #E6FFFB; 
+	text-shadow: 2px 2px 8px #212123; 
 	font-size: 16px;
 }
 
@@ -129,16 +133,16 @@ a:hover {
 	width: 950px;
 	height: 475px;
 	border: 4px solid;
-
+	border-radius: 5px;
 	position: relative;
-	border-color: white;
-	background-color: white;
-	background-image: url("upfeathers.png"), none;
+	border-color: #A7D2DB;
+	background-color: #212123;
+	/*background-image: url("footer_lodyas.png"), none;*/
 }
 
 .info {
 	font-weight: bold;
-	color: #EA7146;
+	color: #A7D2DB;
 }
 
 #settingsBox {
