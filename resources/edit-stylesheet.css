@@ -87,12 +87,6 @@ a:hover {
 	overflow: auto;
 }
 
-#pic img {
-	height: auto;
-	width: 187px;
-	margin-bottom: 10px;
-}
-
 #basicinfo li {
 	list-style: none;
 	color: #705440;
@@ -145,7 +139,10 @@ a:hover {
 	margin-left: 60px;
 }
 
-input {
-	width: 250px;
+#basicinfo input {
+	width: 200px;
 }
 
+#basicinfo #bio {
+	height: 200px;
+}
