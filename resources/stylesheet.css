@@ -69,8 +69,6 @@ a:hover {
     color: white;
 }
 
-
-
 #name {
 	margin: 150px 0 0 458px;
 	font-size: 40px;
@@ -85,8 +83,6 @@ a:hover {
     /*This is for names that are too long*/
     overflow-x: hidden;
 }
-
-
 
 #basicinfo {
 	margin: 0px 0 0 175px;
