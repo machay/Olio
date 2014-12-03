@@ -1,0 +1,105 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	width: 100%;
+	background-image: url("bg.jpg"), none;
+
+}
+body, ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+#nav {
+	position:fixed;
+	top: 0px;
+	display:block;
+	width: 100%;
+	background-color: #8CBD90;
+	text-align:right;
+	padding: 1em 3em;
+	z-index:100;
+}
+
+
+#nav li {
+	list-style: none;
+	padding-right: 3.5em;
+	display: inline;
+	font-size: 1.5em;
+	float: left;
+	line-height: 2em;
+}
+
+#logo a {
+	font-size: 1.5em;
+	color: #E0DE9F;
+}
+
+/* unvisited link */
+a:link {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #705440;
+    text-decoration: none;
+}
+
+/* hover over link */
+a:hover {
+    text-decoration: none;
+    color: #E6CD83;
+}
+
+#login {
+	margin-top: 150px;
+	padding-left: 400px;
+	width: 50%;
+}
+
+legend {
+	font-size: 40px;
+	color: #705440;
+}
+
+tr {
+	color: #705440;
+}
+
+input {
+	width: 300px;
+}
+
+#pic img {
+	height: auto;
+	width: 300px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	float: left;
+}
+
+.btn {
+  background: #3bb373;
+  background-image: -webkit-linear-gradient(top, #3bb373, #489964);
+  background-image: -moz-linear-gradient(top, #3bb373, #489964);
+  background-image: -ms-linear-gradient(top, #3bb373, #489964);
+  background-image: -o-linear-gradient(top, #3bb373, #489964);
+  background-image: linear-gradient(to bottom, #3bb373, #489964);
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  font-family: 'Oswald', sans-serif;
+  color: #4d270e;
+  font-size: 18px;
+  padding: 14px;
+  float: right;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
