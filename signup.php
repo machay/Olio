@@ -8,7 +8,6 @@
 	<body>
 		<ul id = "nav">
 			<li id = "logo"><a href='#'> OLIO </a></li>
-			<li><a href= edit.html> Edit </a></li>
 			<li><a href= about.html> About </a></li>
 			<li><a href= contact.html> Contact </a></li>
 		</ul>
