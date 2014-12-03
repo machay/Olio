@@ -1,6 +1,3 @@
-<?php
-
-?>
 <html>
 	<head>
 		<link href="../../resources/stylesheet.css" rel="stylesheet" />
@@ -22,7 +19,21 @@
 					<li><span class = "info">Email: </span><a href="mailto:someone@example.com">someone@example.com</a></li>
 				</ul>
 			</div>
-			<div id = "box"></div>
+			<div id = "box">
+				<ul id="photos">
+				<?php
+				session_start();
+
+				$query = "SELECT tag FROM uploads";
+				$result = $mysqli->query($query) or die(mysqli_error($mysqli));
+
+				while ($row = $result->fetch_object()) {
+					$img = $row->tag;
+					echo "<li>$img</li>"
+				}
+				?>
+				</ul>
+			</div>
 			<button class = 'btn'><a href = edit.php> Edit Portfolio </a></button>
 		</body>
 </html>
