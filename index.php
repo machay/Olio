@@ -49,10 +49,11 @@
           <div id="loginattempt">
             <?php
             require_once 'config.php';   
+            require 'connection.php';
             $_SESSION['DB_USERNAME'] = $username;
             $conn = new MySQLi($_SESSION['DB_HOST'], $_SESSION['DB_NAME'], $_SESSION['DB_USERNAME'], $pass) or die(mysqli_error());
             if ($conn) {
-              ?> <script>window.location.href = 'portfolio.html'</script> <?php
+              ?> <a href=portfolio.html></a> <?php
             } 
             ?>
           </div>
