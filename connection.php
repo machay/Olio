@@ -1,6 +1,6 @@
 <?php
 $mysql_hostname = "localhost";
-$mysql_user = "";
+$mysql_user = "root";
 $mysql_password = "";
 $mysql_database = "olio";
 $prefix = "";
