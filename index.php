@@ -71,7 +71,7 @@
         <form action="index.php" method="POST">
           <div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
           <tr> <td>Username:</td> <td> <input type="text" size="60" value="<?php echo $username; ?>" name="username" id="username"/></td> </tr> <br>
-          <tr> <td>Password:</td> <td> <input type="text" size="60" value="<?php echo $password; ?>" name="password" id="password"/></td> </tr> <br>
+          <tr> <td>Password:</td> <td> <input type="password" size="60" value="<?php echo $password; ?>" name="password" id="password"/></td> </tr> <br>
           <button type = "submit" class = 'btn' id='save' name='save'><a> Log In! </a></button>
           <tr> <td> <a href="signup.php"> Not a Member? </a> </td> </tr>
         </form> 
