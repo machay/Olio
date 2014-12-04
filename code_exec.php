@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'config.php';
-include('connection.php');
+require 'connection.php';
 $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $mi=$_POST['mi'];
