@@ -20,7 +20,7 @@
 					<table>
 						<tr> 
 							<div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
-								<form action="signup.php" method="POST">
+								<form action="code_exec.php" method="POST">
 								<td>First Name:</td> <td> <input type="text" name="fname" required></td> </tr> 
 								<tr> <td>Last Name:</td> <td> <input type"text" name="lname" required></td> </tr>
 								<tr> <td>Middle Initial:</td> <td> <input type"text" name="mi" required></td> </tr>
@@ -34,28 +34,6 @@
 					</table> 
 					<button type = "submit" class = 'btn'><a> Sign Up! </a></button>
 			</fieldset>
-			<?php
-			session_start();
-			require_once 'config.php';
-			require 'connection.php';
-			$fname=$_POST['fname'];
-			$lname=$_POST['lname'];
-			$mi=$_POST['mi'];
-			$dob=$_POST['dob'];
-			$user=$_POST['user'];
-			$pass=$_POST['pass'];
-			$inst=$_POST['inst'];
-			$email=$_POST['email'];
-			$phone=$_POST['phone'];
-			$newuser = "INSERT IGNORE INTO users (fname, lname, mi, dob, email, inst, phone, user, pass) VALUES('$fname', '$lname', '$mi', '$dob', '$email', '$inst', '$phone', '$user', '$pass'";
-			$conn->exec($newuser);
-			//$usertable = "INSERT TABLE IF NOT EXISTS "
-			//Directory manipulation here
-			$dir = '.';
-			//mkdir()
-			header("location: portfolio.html");
-			mysql_close($conn);
-			?>
 		</div> 
 	</body> 
 </html>
