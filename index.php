@@ -5,6 +5,9 @@
     <title>Log In</title>
     <link href="resources/login-stylesheet.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="resources/spectrum.css">
   </head>
   <?php 
 
@@ -78,8 +81,8 @@
         </form> 
       </fieldset>
     </div> 
-            
-    
+          
     </div>
+
   </body>
 </html>
