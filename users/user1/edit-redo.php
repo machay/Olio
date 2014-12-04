@@ -15,6 +15,7 @@ $mysqli->query($updateuser) or die(mysqli_error($conn));
 			//Directory manipulation here
 			$dir = '.';
 			//mkdir()
-			header("location: index.php");
+			header("location: index-redo.php");
 			mysql_close($conn);
 			?>
+
