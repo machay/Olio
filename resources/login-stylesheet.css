@@ -1,7 +1,8 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background1.svg"), none;
+	background-image: url("background1.jpg"), none;
+	background-size: contain;
 
 }
 body, ul, li {
@@ -36,8 +37,9 @@ body, ul, li {
 }
 
 #login {
-	margin-top: 150px;
-	padding-left: 400px;
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
 	width: 50%;
 }
 
@@ -66,7 +68,7 @@ a:hover {
 
 
 legend {
-	font-size: 40px;
+	font-size: 3em;
 	color: #626867;
 }
 
@@ -76,15 +78,17 @@ tr {
 
 
 input {
-	width: 300px;
+	width: 40%;
+	margin-right: 2em;
+	float: right;
 }
 
 #pic img {
 	height: auto;
-	width: 300px;
-	margin-bottom: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 30%;
+	margin-bottom: 1.5em;
+	margin-left: 3em;
+	margin-right: 2em;
 	float: left;
 }
 
@@ -97,16 +101,16 @@ input {
   background-image: linear-gradient(to bottom, #ADADFF, white);
   -webkit-border-radius: 29;
   -moz-border-radius: 29;
-  border-radius: 29px;
+  border-radius: 2em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #626867;
-  font-size: 18px;
-  padding: 14px;
+  font-size: 1.2em;
+  padding: 1em;
   float: right;
-  margin-left: 300px;
-  margin-right: 200px;
-  margin-top: 10px;
+  margin-left: 3em;
+  margin-right: 4em;
+  margin-top: 3em;
 }
 
 .btn:hover {

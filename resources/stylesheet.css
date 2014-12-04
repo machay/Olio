@@ -1,7 +1,8 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background1.svg"), none;
+	background-image: url("background1.jpg"), none;
+	background-size: contain;
 
 }
 body, ul, li {
