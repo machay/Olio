@@ -1,8 +1,7 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background1.jpg"), none;
-	background-size: contain;
+	background-image: url("background1.svg"), none;
 
 }
 body, ul, li {
@@ -116,4 +115,8 @@ table {
 
 fieldset {
 	background-color: rgba(255,255,255,0.8);
+}
+
+#info {
+	float: right;
 }
