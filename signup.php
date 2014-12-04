@@ -52,7 +52,7 @@
 			//$usertable = "INSERT TABLE IF NOT EXISTS "
 			//Directory manipulation here
 			$dir = '.';
-			mkdir()
+			//mkdir()
 			header("location: portfolio.html");
 			mysql_close($conn);
 			?>
