@@ -19,6 +19,6 @@
 			//Directory manipulation here
 			$dir = '.';
 			//mkdir()
-			header("location: portfolio.html");
+			header("location: index.php");
 			mysql_close($conn);
 			?>
