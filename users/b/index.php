@@ -1,16 +1,15 @@
 <html>
 	<head>
 		<script type="text/javascript" src="../../resources/docs/jquery-1.9.1.js"></script>
-	    	<script type="text/javascript" src="../../resources/spectrum.js"></script>
+	    <script type="text/javascript" src="../../resources/spectrum.js"></script>
 		<script src="../../resources/glisse.js"></script>	
 		<link rel="stylesheet" href="../../resources/glisse.css" />
 		<link rel="stylesheet" href="../../resources/app.css" />
 		<link href="../../resources/stylesheet.css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-
-
 		<link rel="stylesheet" type="text/css" href="../../resources/spectrum.css">
+
 	</head>
 		<body>
 			<ul id = "nav">
@@ -25,20 +24,46 @@
 				</li>
 			</ul>
 
-			<div id = "name"> Ryan Gavin </div>
+			<div id = "name">
+				<?php
+				require 'database.php';
+				$user = $_SESSION["username"];
+				$query = "SELECT * FROM users";
+				$result = $mysqli->query($query) or die(mysqli_error($mysqli));
+
+				while ($row = $result->fetch_object()) {
+						$name = $row->fname;
+						$lname = $row->lname;
+						$email = $row->email;
+				}
+				echo "<a href='mailto:$email'>$name $lname</a>";
+				?>
+			</div>
 			<div id = "pic"><img src="../../resources/Logolio.png" alt="Logo"></div>
 			<div id = "basicinfo">
 				<ul id = "Information">
-					<li> Tell the world a bit about yourself! What makes you special? What are you passionate about? Write it here! </li>
-					<!-- <li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
+					<?php
+					//require 'database.php';
+					$user = $_SESSION["username"];
+					$query = "SELECT * FROM users";
+					$result = $mysqli->query($query) or die(mysqli_error($mysqli));
+
+					while ($row = $result->fetch_object()) {
+						$school = $row->school;
+						$bio = $row->bio;
+						}
+				echo "<li><a>$school</a></li>";
+				echo "<li><a>$bio</a></li>";
+				?>
+					<!--Tell the world a bit about yourself! What makes you special? What are you passionate about? Write it here! </li>
+					<!- \<li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
 					<li><span class = "info">Email: </span><a href="mailto:someone@example.com">someone@example.com</a></li> -->
-					<li>Copyright © 2014 Ryan Gavin</p> 
 				</ul>
 			</div>
 			<div id="box">
 				<ul id="piclist">
 				<?php
-				require 'database.php';
+				//require 'database.php';
 				//session_start();
 
 				$user = $_SESSION["username"];

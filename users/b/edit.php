@@ -5,7 +5,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
 		<script src="../../resources/dropzone.js">/</script>
-		<script type="text/javascript" src="dropzoneconfig.js"></script>
+		<script type="text/javascript" src="../../dropzoneconfig.js"></script>
 		<link rel="stylesheet" type="text/css" href="../../resources/spectrum.css">
 	</head>
 		<body>
@@ -24,15 +24,14 @@
 				</li>
 			</ul>
 
-			<form>
+			<form action="edit-info.php" method="POST">
 			<div id = "name"> Your Name </div>
 			<div id = "pic"><img src="../../resources/Logolio.png" alt="Logo"></div>
 			<div id = "basicinfo">
 				<ul id = "Information">
-					<li><span class = "info"> Name: </span><input type = "text" name = "yourname" value "yourname" required></li>
 					<li><span class = "info"> Biography: </span><input id = "bioinfo" type = "text" name = "bio" value "bio" placeholder = "Tell the world a bit about yourself!"> </li>
-					<li><span class = "info"> Institution: </span><input type = "text" name = "institution" value "institution" required></li>
-					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email" required> </li>
+					<li><span class = "info"> Institution: </span><input type = "text" name = "institution" value "institution"</li>
+					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email"> </li>
 					<button id = 'btn2' type = "submit" class = 'btn' > Save Information </button>
 				</ul>
 			</div>
