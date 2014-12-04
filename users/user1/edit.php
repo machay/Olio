@@ -10,14 +10,14 @@
 	</head>
 		<body>
 			<ul id = "nav">
-				<li id = "logo"><a href= portfolio.html> OLIO </a></li>
-				<li><a href= portfolio.html> Home </a></li>
+				<li id = "logo"><a href= index.php> OLIO </a></li>
+				<li><a href= index.php> Home </a></li>
 				<li><a href= about.html> About </a></li>
 				<li><a href= contact.html> Contact </a></li>
 				<li><a href= logout.php> Log Out </a></li>
 				<li id = "settings">
 					<a href='#'><img src="../../resources/settings.png" alt="settings"></a>
-					<span><a href='edit.html'>Edit</a></span>
+					<span><a href='edit.php'>Edit</a></span>
 					<div id="settingsBox">
 						<input type='text' id="flat" />
 					</div>
@@ -41,7 +41,6 @@
 			<form action="file_upload.php" method="post" class="dropzone" id="box">
 			</form>
 			</div>
-			<button class = 'btn' id="submit">Save Pictures</button>
 			<script type="text/javascript" src="../../resources/docs/jquery-1.9.1.js"></script>
 			<script type="text/javascript" src="../../resources/spectrum.js"></script>
 

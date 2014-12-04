@@ -1,15 +1,21 @@
 <html>
 	<head>
+		<script type="text/javascript" src="../../resources/docs/jquery-1.9.1.js"></script>
+	    <script type="text/javascript" src="../../resources/spectrum.js"></script>
+		<script src="../../resources/glisse.js"></script>	
+		<link rel="stylesheet" href="../../resources/glisse.css" />
+		<link rel="stylesheet" href="../../resources/app.css" />
 		<link href="../../resources/stylesheet.css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
 
 		<link rel="stylesheet" type="text/css" href="../../resources/spectrum.css">
 	</head>
 		<body>
 			<ul id = "nav">
-				<li id = "logo"><a href= portfolio.html> OLIO </a></li>
-				<li><a href= portfolio.html> Home </a></li>
+				<li id = "logo"><a href= index.php> OLIO </a></li>
+				<li><a href= index.php> Home </a></li>
 				<li><a href= ../../about.html> About </a></li>
 				<li><a href= ../../contact.html> Contact </a></li>
 				<li><a href= ../../logout.php> Log Out </a></li>
@@ -19,7 +25,7 @@
 				</li>
 			</ul>
 
-			<div id = "name"> Jamie Smith </div>
+			<div id = "name"> Ryan Gavin </div>
 			<div id = "pic"><img src="../../resources/Logolio.png" alt="Logo"></div>
 			<div id = "basicinfo">
 				<ul id = "Information">
@@ -29,25 +35,33 @@
 					<li>Copyright © 2014 Jamie Smith</p> 
 				</ul>
 			</div>
-			<div id="box"></div>
-				<ul id="photos">
+			<div id="box">
+				<ul id="piclist">
 				<?php
 				require 'database.php';
-				session_start();
+				//session_start();
 
 				$user = $_SESSION["username"];
-				$query = "SELECT tag FROM $user";
+				$query = "SELECT src FROM $user";
 				$result = $mysqli->query($query) or die(mysqli_error($mysqli));
 
 				while ($row = $result->fetch_object()) {
-					$img = $row->tag;
+					$img = $row->src;
 					echo "<li>$img</li>";
 				}
 				?>
+				<script>
+				$(function () {
+				    $('.pics').glisse({
+				        changeSpeed: 550, 
+				        speed: 500,
+				        effect:'bounce',
+				        fullscreen: false
+				    }); 
+				});
+				</script>
 				</ul>
 			</div>
-			<script type="text/javascript" src="../../resources/docs/jquery-1.9.1.js"></script>
-	    <script type="text/javascript" src="../../resources/spectrum.js"></script>
 		
 		<script>
 		    $("#flat").spectrum({
@@ -61,6 +75,4 @@
 		    	$('#settingsBox').toggle();
 		    });
 		</script>
-			<button class = 'btn'><a href = edit.php> Edit Portfolio </a></button>
-		</body>
 </html>

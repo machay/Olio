@@ -132,11 +132,12 @@ a:hover {
 	width: 60em;
 	height: 29.7em;
 	border: 0.3em solid;
-
+	overflow: auto;
 	position: relative;
 	border-color: white;
 	background-color: white;
 	background-image: url("upfeathers.png"), none;
+
 }
 
 /*Box for edit*/
@@ -175,4 +176,13 @@ a:hover {
 	margin-top: 1em;
 }
 
+#piclist {
+	display: inline-block;
+	list-style: none;
+}
 
+.pics {
+	display: inline-block;
+	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
+}
