@@ -7,10 +7,10 @@
 
 <body>
 	<?php 
-	session_start();
-	session_destroy();
-
-	echo "You have logged out";
+		session_start();
+		session_destroy();
+		header('Location: login.php');
+		exit;
 	?>
 </body>
 </html>
