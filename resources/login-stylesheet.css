@@ -59,6 +59,11 @@ a:hover {
     color: white;
 }
 
+#memberlink:hover {
+	text-decoration: none;
+    color: red;
+}
+
 
 legend {
 	font-size: 40px;
