@@ -29,6 +29,7 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
+	margin-top: 1em;
 }
 
 #logo a {
@@ -37,8 +38,9 @@ body, ul, li {
 }
 
 #login {
-	margin-top: 150px;
-	padding-left: 400px;
+	margin-top: 1em;
+	padding-left: auto;
+	padding-right: auto;
 	width: 50%;
 }
 
@@ -61,13 +63,14 @@ a:hover {
 }
 
 #register {
-	margin-top: 150px;
-	padding-left: 400px;
+	margin-top: 10em;
 	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 legend {
-	font-size: 40px;
+	font-size: 2.5em;
 	color: #705440;
 }
 
@@ -77,10 +80,11 @@ tr {
 
 #pic img {
 	height: auto;
-	width: 300px;
-	margin-bottom: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 3em;
+	margin-right: 1em;
 	float: left;
 }
 
@@ -91,18 +95,18 @@ tr {
   background-image: -ms-linear-gradient(top, #ADADFF, white);
   background-image: -o-linear-gradient(top, #ADADFF, white);
   background-image: linear-gradient(to bottom, #ADADFF, white);
-  -webkit-border-radius: 29;
-  -moz-border-radius: 29;
-  border-radius: 29px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #626867;
-  font-size: 18px;
-  padding: 14px;
+  font-size: 1em;
+  padding: 0.5em;
   float: right;
-  margin-left: 300px;
-  margin-right: 200px;
-  margin-top: 10px;
+  margin-left: 2em;
+  margin-right: 1em;
+  margin-top: 3em;
 }
 
 .btn:hover {
@@ -116,4 +120,6 @@ table {
 
 fieldset {
 	background-color: rgba(255,255,255,0.8);
+	padding-left: auto;
+	padding-right: auto;
 }

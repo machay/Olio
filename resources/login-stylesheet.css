@@ -29,6 +29,7 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
+	margin-top: 1em;
 }
 
 #logo a {
@@ -99,8 +100,8 @@ input {
   background-image: -ms-linear-gradient(top, #ADADFF, white);
   background-image: -o-linear-gradient(top, #ADADFF, white);
   background-image: linear-gradient(to bottom, #ADADFF, white);
-  -webkit-border-radius: 29;
-  -moz-border-radius: 29;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
   border-radius: 2em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;

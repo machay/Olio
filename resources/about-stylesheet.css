@@ -30,6 +30,7 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
+	margin-top: 1em;
 }
 
 #logo a {
