@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `phone` varchar(25) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `bio` varchar(500) NOT NULL,
+  `bio` text(500) NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
