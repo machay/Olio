@@ -68,6 +68,7 @@
       <li id = "logo"><a href='#'> OLIO </a></li>
       <li><a href= about.html> About </a></li>
       <li><a href= contact.html> Contact </a></li>
+      <li><a href= logout.php> Log Out </a></li>
     </ul>
     <div id = "login"> 
       <fieldset>
