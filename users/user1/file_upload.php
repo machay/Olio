@@ -15,6 +15,7 @@ if (!empty($_FILES)) {
 
 	$user = $_SESSION['username'];
 	$src = "<img src='$targetPath' alt='picture'>";
+	$src = mysql_real_escape_string($src);
 	$update_query = "INSERT INTO user1 (src)
 	VALUES ('$src')";
 
