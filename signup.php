@@ -21,18 +21,20 @@
 						<tr> 
 							<div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
 								<form action="signup.php" method="POST">
-								<td>First Name:</td> <td> <input type="text" name="fname" required></td> </tr> 
-								<tr> <td>Last Name:</td> <td> <input type"text" name="lname" required></td> </tr>
-								<tr> <td>Middle Initial:</td> <td> <input type"text" name="mi" required></td> </tr>
-								<tr> <td>Date of Birth (mm/dd/yyyy):</td> <td> <input type"date" name="dob" required></td> </tr>
-								<tr> <td>Email:</td> <td> <input type="email" name="email" required></td> </tr> 
-								<tr> <td>Institution: </td> <td> <input type="text" name = "inst"></td> </tr>
-								<tr> <td>Phone:</td> <td> <input type="tel" name="phone"></td> </tr> 
-								<tr> <td>Username:</td> <td> <input type="text" name="user" required></td> </tr> 
-								<tr> <td>Password:</td> <td> <input type="password" name="pass" required></td> </tr> 
-							</form>
+									<div id = "info">
+										First Name: <input type="text" name="fname" required> <br>
+										Last Name: <input type"text" name="lname" required> <br>
+										Middle Initial: <input type"text" name="mi" required> <br>
+										Date of Birth (mm/dd/yyyy):<input type"date" name="dob" required> <br>
+										Email:<input type="email" name="email" required> <br>
+										Institution: <input type="text" name = "inst"> <br>
+										Phone:<input type="tel" name="phone"> <br>
+										Username:<input type="text" name="user" required> <br>
+										Password:<input type="password" name="pass" required> <br>
+									</div>
+									<button type = "submit" class = 'btn'><a> Sign Up! </a></button>
+								</form>
 					</table> 
-					<button type = "submit" class = 'btn'><a> Sign Up! </a></button>
 			</fieldset>
 			<?php
 			session_start();
