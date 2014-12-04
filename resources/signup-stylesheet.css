@@ -1,8 +1,7 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background1.jpg"), none;
-	background-size: contain;
+	background-image: url("background1.svg"), none;
 
 }
 body, ul, li {
@@ -29,7 +28,6 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
-	margin-top: 1em;
 }
 
 #logo a {
@@ -38,9 +36,8 @@ body, ul, li {
 }
 
 #login {
-	margin-top: 1em;
-	padding-left: auto;
-	padding-right: auto;
+	margin-top: 150px;
+	padding-left: 400px;
 	width: 50%;
 }
 
@@ -63,14 +60,13 @@ a:hover {
 }
 
 #register {
-	margin-top: 10em;
+	margin-top: 150px;
+	padding-left: 400px;
 	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 legend {
-	font-size: 2.5em;
+	font-size: 40px;
 	color: #705440;
 }
 
@@ -80,11 +76,10 @@ tr {
 
 #pic img {
 	height: auto;
-	width: 17em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 3em;
-	margin-right: 1em;
+	width: 300px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
 	float: left;
 }
 
@@ -95,18 +90,18 @@ tr {
   background-image: -ms-linear-gradient(top, #ADADFF, white);
   background-image: -o-linear-gradient(top, #ADADFF, white);
   background-image: linear-gradient(to bottom, #ADADFF, white);
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  border-radius: 2em;
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #626867;
-  font-size: 1em;
-  padding: 0.5em;
+  font-size: 18px;
+  padding: 14px;
   float: right;
-  margin-left: 2em;
-  margin-right: 1em;
-  margin-top: 3em;
+  margin-left: 300px;
+  margin-right: 200px;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -120,6 +115,8 @@ table {
 
 fieldset {
 	background-color: rgba(255,255,255,0.8);
-	padding-left: auto;
-	padding-right: auto;
+}
+
+#info {
+	float: right;
 }

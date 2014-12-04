@@ -37,7 +37,7 @@
 				</ul>
 			</div>
 			</form>
-			<div id = "box">
+			<div>
 			<form action="file_upload.php" method="post" class="dropzone" id="box">
 			</form>
 			</div>
