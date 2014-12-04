@@ -15,7 +15,7 @@
 	VALUES('$fname','$lname', '$mi', '$dob', '$email', '$inst', '$phone', '$user', '$pass')";
 	$mysqli->query($newuser) or die(mysqli_error($conn));
 	//$conn->exec($newuser);
-	$usertable = "INSERT TABLE IF NOT EXISTS " . $user . "(
+	$usertable = "CREATE TABLE IF NOT EXISTS " . $user . "(
 	`id` int(11) NOT NULL,
   	`src` varchar(255) NOT NULL
 	) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
