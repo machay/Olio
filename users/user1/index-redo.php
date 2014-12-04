@@ -28,13 +28,15 @@
 				<?php
 				require 'database.php';
 				$user = $_SESSION["username"];
-				$query = "SELECT * FROM $user";
+				$query = "SELECT * FROM users";
 				$result = $mysqli->query($query) or die(mysqli_error($mysqli));
 
-				while $row = $result->fetch_object()) {
-						$name = $row->$fname;
-						}
-				echo "<a href="mailto:$email">$name</a>";
+				while ($row = $result->fetch_object()) {
+						$name = $row->fname;
+						$lname = $row->lname;
+						$email = $row->email;
+				}
+				echo "<a href='mailto:$email'>$name $lname</a>";
 				?>
 			</div>
 			<div id = "pic"><img src="../../resources/Logolio.png" alt="Logo"></div>
@@ -42,26 +44,26 @@
 				<ul id = "Information">
 					<li>
 					<?php
-					require 'database.php';
+					//require 'database.php';
 					$user = $_SESSION["username"];
-					$query = "SELECT * FROM $user";
+					$query = "SELECT * FROM users";
 					$result = $mysqli->query($query) or die(mysqli_error($mysqli));
 
-					while $row = $result->fetch_object()) {
-						$school = $row->$school;
+					while ($row = $result->fetch_object()) {
+						$school = $row->school;
 						}
 				echo "<a>$school</a>";
 				?>
 
 					<!--Tell the world a bit about yourself! What makes you special? What are you passionate about? Write it here! </li>
-					<!-- \<li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
+					<!- \<li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
 					<li><span class = "info">Email: </span><a href="mailto:someone@example.com">someone@example.com</a></li> -->
 				</ul>
 			</div>
 			<div id="box">
 				<ul id="piclist">
 				<?php
-				require 'database.php';
+				//require 'database.php';
 				//session_start();
 
 				$user = $_SESSION["username"];

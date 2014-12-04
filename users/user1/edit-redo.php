@@ -1,7 +1,8 @@
 <?php
-session_start();
-require_once 'config.php';
-require 'connection.php';
+//session_start();
+//require_once 'config.php';
+//require 'connection.php';
+require 'database.php';
 $fname=mysql_real_escape_string($_POST['yourname']);
 $school=mysql_real_escape_string($_POST['institution']);
 $bio = mysql_real_escape_string($_POST['bio']);
