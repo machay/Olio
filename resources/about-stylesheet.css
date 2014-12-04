@@ -1,4 +1,77 @@
-p.titles {
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	width: 100%;
+	background-image: url("background1.svg"), none;
+
+}
+body, ul, li {
+	padding: 0;
+	margin: 0;
+}
+ 
+#nav {
+	/*Can't seem to figure out why there's whitespace around the div*/
+	position:fixed;
+	top: 0px;
+	display:block;
+	width: 100%;
+	background-color: #B3E5E3;
+	text-align:right;
+	padding: 0.5em 3em;
+	z-index:100;
+}
+
+
+#nav li {
+	list-style: none;
+	padding-right: 3.5em;
+	display: inline;
+	font-size: 1.5em;
+	float: left;
+	line-height: 1.5em;
+}
+
+#logo a {
+	font-size: 1.5em;
+	color: white;
+}
+
+#settings img {
+	width: auto; 
+	height: 25px;
+	padding-top: 5px;
+}
+#settings {
+	float: right !important;
+}
+#settings span a {
+	text-transform: uppercase;
+	position:relative;
+	top:-3px;
+	padding-left: 0.5em;
+}
+
+/* unvisited link */
+a:link {
+    color: #626867;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #626867;
+    text-decoration: none;
+}
+
+/* hover over link */
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.titles {
 	text-align: center;
 	font-size: 35px;
 	font-weight: bold;
