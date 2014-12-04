@@ -15,20 +15,20 @@
 	VALUES('$fname','$lname', '$mi', '$dob', '$email', '$inst', '$phone', '$user', '$pass')";
 	$mysqli->query($newuser) or die(mysqli_error($conn));
 	//$conn->exec($newuser);
-	$usertable = "INSERT TABLE IF NOT EXISTS " . $_SESSION['username'] . "(
+	$usertable = "INSERT TABLE IF NOT EXISTS " . $user . "(
 	`id` int(11) NOT NULL,
   	`src` varchar(255) NOT NULL
 	) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-	ALTER TABLE " . $_SESSION['username'] . "
+	ALTER TABLE " . $user . "
  	ADD PRIMARY KEY (`id`);
- 	ALTER TABLE " . $_SESSION['username'] . "
+ 	ALTER TABLE " . $user . "
 	MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;";
 	//Directory manipulation here
 	$index_file = './users/user1/index.php';
 	$edit_file = './users/user1/edit.php';
-	$new_index = './users/' . $_SESSION['username'] . '/index.php';
-	$new_edit = './users/' . $_SESSION['username'] . '/edit.php';
-	$userdir = './users/' . $_SESSION['username'] .'/';
+	$new_index = './users/' . $user . '/index.php';
+	$new_edit = './users/' . $user . '/edit.php';
+	$userdir = './users/' . $user .'/';
 	if (!mkdir($userdir, 0777, true)) {
     		die('Failed to create folders...');
     	}

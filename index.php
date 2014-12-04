@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (isset($_SESSION['username'])) {
+  $username = $_SESSION['username'];
+  header('location: users/'.$username);
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html> 
@@ -10,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="resources/spectrum.css">
   </head>
   <?php 
-      session_start();
+      //session_start();
       // variables to hold our form values:
       $username = '';
       $password = '';
