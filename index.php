@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="resources/spectrum.css">
   </head>
   <?php 
-
+      session_start();
       // variables to hold our form values:
       $username = '';
       $password = '';
@@ -53,11 +53,26 @@
             <?php
             require_once 'config.php';   
             require 'connection.php';
-            $_SESSION['DB_USERNAME'] = $username;
-            $conn = new MySQLi($_SESSION['DB_HOST'], $_SESSION['DB_NAME'], $_SESSION['DB_USERNAME'], $pass) or die(mysqli_error());
-            if ($conn) {
-              ?> <a href=portfolio.html></a> <?php
-            } 
+            /*
+            try {
+              $dbname = 'olio';
+              $user = 'root';
+              $pass = '';
+              $connpdo = new PDO('mysql:host=localhost;dbname='.$dbname, $user, $pass);
+            }
+            catch (Exception $e) {
+              echo "Error: " . $e->getMessage();
+            }
+            */
+            $login = $connpdo->prepare('SELECT username FROM users WHERE username=:username AND password=:pass');
+            $login->execute(array(':username' => $username, ':pass' => $password));
+            if ($user = $login->fetch()) {
+              $_SESSION['username'] = $username;
+              header('location: users/'.$username);
+            }
+            else {
+              $err = "Incorrect username or password";
+            }
             ?>
           </div>
         <?php } 
@@ -78,7 +93,8 @@
           <tr> <td>Username:</td> <td> <input type="text" size="60" value="<?php echo $username; ?>" name="username" id="username"/></td> </tr> <br>
           <br><tr> <td>Password:</td> <td> <input type="password" size="60" value="<?php echo $password; ?>" name="password" id="password"/></td> </tr> <br>
           <button type = "submit" class = 'btn' id='save' name='save'><a> Log In! </a></button>
-          <br><tr> <td> <a id = "memberlink" href="signup.php"> Not a Member? </a> </td> </tr>
+          <?php if (isset($err)) echo"<p>$err</p>" ?>
+          <br><tr> <td> <a id = "memberlink" href="signup.html"> Not a Member? </a> </td> </tr>
         </form> 
       </fieldset>
     </div> 
