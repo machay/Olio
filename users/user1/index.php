@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<script type="text/javascript" src="../../resources/docs/jquery-1.9.1.js"></script>
-	    <script type="text/javascript" src="../../resources/spectrum.js"></script>
+	    	<script type="text/javascript" src="../../resources/spectrum.js"></script>
 		<script src="../../resources/glisse.js"></script>	
 		<link rel="stylesheet" href="../../resources/glisse.css" />
 		<link rel="stylesheet" href="../../resources/app.css" />
@@ -32,7 +32,7 @@
 					<li> Tell the world a bit about yourself! What makes you special? What are you passionate about? Write it here! </li>
 					<!-- <li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
 					<li><span class = "info">Email: </span><a href="mailto:someone@example.com">someone@example.com</a></li> -->
-					<li>Copyright © 2014 Jamie Smith</p> 
+					<li>Copyright © 2014 Ryan Gavin</p> 
 				</ul>
 			</div>
 			<div id="box">
