@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link href="resources/stylesheet.css" rel="stylesheet" />
+		<link href="resources/edit-stylesheet.css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
@@ -12,6 +12,7 @@
 				<li><a href= portfolio.html> Home </a></li>
 				<li><a href= about.html> About </a></li>
 				<li><a href= contact.html> Contact </a></li>
+				<li><a href= logout.php> Log Out </a></li>
 				<li id = "settings">
 					<a href='#'><img src="./resources/settings.png" alt="settings"></a>
 					<span><a href='edit.html'>Edit</a></span>
@@ -22,12 +23,12 @@
 			</ul>
 
 			<form>
-			<div id = "name"> Jamie Smith </div>
+			<div id = "name"> Your Name </div>
 			<div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
 			<div id = "basicinfo">
 				<ul id = "Information">
 					<li><span class = "info"> Name: </span><input type = "text" name = "yourname" value "yourname" required></li>
-					<li><span class = "info"> Biography: </span><input type = "text" name = "bio" value "bio" placeholder = "Tell the world a bit about yourself!"> </li>
+					<li><span class = "info"> Biography: </span><input id = "bioinfo" type = "text" name = "bio" value "bio" placeholder = "Tell the world a bit about yourself!"> </li>
 					<li><span class = "info"> Institution: </span><input type = "text" name = "institution" value "institution" required></li>
 					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email" required> </li>
 					<button id = 'btn2' type = "submit" class = 'btn' > Save Information </button>

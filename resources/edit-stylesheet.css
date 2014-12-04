@@ -1,22 +1,23 @@
 body {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
-	background-image: url("background.svg"), none;
+	background-image: url("background1.svg"), none;
 
 }
 body, ul, li {
 	padding: 0;
 	margin: 0;
 }
-
+ 
 #nav {
+	/*Can't seem to figure out why there's whitespace around the div*/
 	position:fixed;
 	top: 0px;
 	display:block;
 	width: 100%;
-	background-color: #8CBD90;
+	background-color: #B3E5E3;
 	text-align:right;
-	padding: 1em 3em;
+	padding: 0.5em 3em;
 	z-index:100;
 }
 
@@ -27,122 +28,180 @@ body, ul, li {
 	display: inline;
 	font-size: 1.5em;
 	float: left;
-	line-height: 2em;
+	line-height: 1.5em;
 }
 
 #logo a {
 	font-size: 1.5em;
-	color: #E0DE9F;
+	color: white;
+}
+
+#settings img {
+	width: auto; 
+	height: 25px;
+	padding-top: 5px;
+}
+#settings {
+	float: right !important;
+}
+#settings span a {
+	text-transform: uppercase;
+	position:relative;
+	top:-3px;
+	padding-left: 0.5em;
 }
 
 /* unvisited link */
 a:link {
-    color: #705440;
+    color: #626867;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #705440;
+    color: #626867;
     text-decoration: none;
 }
 
 /* hover over link */
 a:hover {
     text-decoration: none;
-    color: #E6CD83;
+    color: white;
 }
 
+
+
 #name {
-	padding:5px; 
-	margin: 20px 0 0 175px;
-	font-size: 20px;
+	margin: 150px 0 0 458px;
+	font-size: 40px;
+	height: 50px;
+    width: 280px;
+    position: relative;
+    color: #626867;
+    background: white;
+    border: 2px solid;
+	border-color: white;
 	text-align: center;
-	height: 100px;
-    width: 250px;
-    position: fixed;
-    color: #EA7146;
-    border-radius: 25px;
-	border: 6px solid;
-    border-color: white;
-    background-color: white;
     /*This is for names that are too long*/
     overflow-x: hidden;
 }
 
+
+
 #basicinfo {
-	margin: 100px 0 0 175px;
+	margin: 0px 0 0 175px;
 	line-height: 30px;
-	height: 390px;
-	width:250px;
+	height: 287px;
+	width:225px;
 	float:left;
 	padding: 5px;
-	border-radius: 25px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border: 6px solid;
-	position: fixed;
+	border: 4px solid;
 	border-color: white;
-	background-color: white;
+	position: auto;
 	overflow: auto;
+	background-color: white;
+}
+
+#pic img {
+	margin: 0px 0 0 175px;
+	height: auto;
+	width: 225px;
+	padding: 5px;
+	
+	border: 4px solid;
+	border-color: white;
+	margin-bottom: 10px;
+	background-image: url("upfeathers.png"), none;
 }
 
 #basicinfo li {
 	list-style: none;
-	color: #705440;
+	color: #626867;
 	padding: 5px;
+	text-shadow: 2px 2px 8px #E6FFFB; 
+	font-size: 16px;
 }
 
+/*Box for portfolio*/
 #box {
-	margin-top: 150px;
-	margin-left: 460px;
+	margin-top: -177px;
+	position: auto;
+	margin-left: 450px;
 	width: 950px;
-	height: 500px;
-	border: 6px solid;
-	border-radius: 25px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	height: 475px;
+	border: 4px solid;
+
 	position: relative;
-	border-color: #705440;
+	border-color: white;
 	background-color: white;
+	background-image: url("upfeathers.png"), none;
+}
+
+/*Box for edit*/
+#box2 {
+	margin-top: -193px;
+	position: auto;
+	margin-left: 450px;
+	width: 950px;
+	height: 475px;
+	border: 4px solid;
+
+	position: relative;
+	border-color: white;
+	background-color: white;
+	background-image: url("upfeathers.png"), none;
 }
 
 .info {
 	font-weight: bold;
-	color: #EA7146;
+	color: #626867;
 }
+
+#settingsBox {
+	position: absolute;
+	background-color: white;
+	padding: 0.5em;
+	margin: 0.6em 0 0 -1em;
+}
+
 
 .btn {
   background: #3bb373;
-  background-image: -webkit-linear-gradient(top, #3bb373, #489964);
-  background-image: -moz-linear-gradient(top, #3bb373, #489964);
-  background-image: -ms-linear-gradient(top, #3bb373, #489964);
-  background-image: -o-linear-gradient(top, #3bb373, #489964);
-  background-image: linear-gradient(to bottom, #3bb373, #489964);
+  background-image: -webkit-linear-gradient(top, #ADADFF, white);
+  background-image: -moz-linear-gradient(top, #ADADFF, white);
+  background-image: -ms-linear-gradient(top, #ADADFF, white);
+  background-image: -o-linear-gradient(top, #ADADFF, white);
+  background-image: linear-gradient(to bottom, #ADADFF, white);
   -webkit-border-radius: 29;
   -moz-border-radius: 29;
   border-radius: 29px;
-  font-family: 'Oswald', sans-serif;
-  color: #4d270e;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #626867;
   font-size: 14px;
   padding: 10px;
   margin-top: 10px;
-  margin-left: ;
   margin-left: 900px;
 }
 
-.btn:hover {
+.btn:hover, #btn2:hover {
   text-decoration: none;
+  color: white;
 }
 
 #btn2.btn {
-	margin-left: 60px;
+	margin-left: 45px;
 }
 
-#basicinfo input {
+#btn2 {
+	margin-left: 5px; 
+}
+
+.btn {
+	margin-left: 55%;
+	margin-top: 10px;
+}
+
+input {
 	width: 200px;
-}
-
-#basicinfo #bio {
-	height: 200px;
 }
