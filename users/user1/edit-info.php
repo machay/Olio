@@ -1,24 +1,16 @@
 <?php
-session_start();
-<<<<<<< Updated upstream
-require_once 'config.php';
-require 'connection.php';
-$fname=mysql_real_escape_string($_POST['yourname']);
-$school=mysql_real_escape_string($_POST['institution']);
-$bio = mysql_real_escape_string($_POST['bio']);
-=======
+//session_start();
 //require_once 'config.php';
 //require 'connection.php';
 require 'database.php';
-$yourname=mysql_real_escape_string($_POST['fname']);
-$lname=mysql_real_escape_string($_POST['lname']);
-$inst=mysql_real_escape_string($_POST['inst']);
->>>>>>> Stashed changes
+$username = $_SESSION['username'];
+$inst=mysql_real_escape_string($_POST['institution']);
 $email=mysql_real_escape_string($_POST['email']);
-$updateuser = "UPDATE users (fname, email, school, bio)
-			SET fname ='$fname', school='$school', 'bio'='$bio', 'email'='$email'
-			WHERE id=1";
-$mysqli->query($updateuser) or die(mysqli_error($conn));
+$bio=mysql_real_escape_string($_POST['bio']);
+$updateuser = "UPDATE users
+			SET school='$inst', bio='$bio', email='$email'
+			WHERE username = '$username'";
+$mysqli->query($updateuser) or die(mysqli_error($mysqli));
 			//$conn->exec($newuser);
 			//$usertable = "INSERT TABLE IF NOT EXISTS "
 			//Directory manipulation here

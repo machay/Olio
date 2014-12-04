@@ -24,14 +24,15 @@
 				</li>
 			</ul>
 
-			<form action="edit-info.php" method="POST">
+			<form>
 			<div id = "name"> Your Name </div>
 			<div id = "pic"><img src="../../resources/Logolio.png" alt="Logo"></div>
 			<div id = "basicinfo">
 				<ul id = "Information">
+					<li><span class = "info"> Name: </span><input type = "text" name = "yourname" value "yourname" required></li>
 					<li><span class = "info"> Biography: </span><input id = "bioinfo" type = "text" name = "bio" value "bio" placeholder = "Tell the world a bit about yourself!"> </li>
-					<li><span class = "info"> Institution: </span><input type = "text" name = "institution" value "institution"</li>
-					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email"> </li>
+					<li><span class = "info"> Institution: </span><input type = "text" name = "institution" value "institution" required></li>
+					<li><span class = "info">Email: </span> <input type = "email" name = "email" value "email" required> </li>
 					<button id = 'btn2' type = "submit" class = 'btn' > Save Information </button>
 				</ul>
 			</div>
