@@ -30,6 +30,7 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
+	margin-top: 1em;
 }
 
 #logo a {
@@ -39,8 +40,7 @@ body, ul, li {
 
 #settings img {
 	width: auto; 
-	height: 25px;
-	padding-top: 5px;
+	height: 1em;
 }
 #settings {
 	float: right !important;
@@ -48,7 +48,7 @@ body, ul, li {
 #settings span a {
 	text-transform: uppercase;
 	position:relative;
-	top:-3px;
+	top:-0.1em;
 	padding-left: 0.5em;
 }
 
@@ -73,14 +73,14 @@ a:hover {
 
 
 #name {
-	margin: 150px 0 0 458px;
-	font-size: 40px;
-	height: 50px;
-    width: 280px;
+	margin: 3.8em 0 0 12em;
+	font-size: 2.5em;
+	height: 1.2em;
+    width: 7em;
     position: relative;
     color: #626867;
     background: white;
-    border: 2px solid;
+    border: 0.1em solid;
 	border-color: white;
 	text-align: center;
     /*This is for names that are too long*/
@@ -90,47 +90,48 @@ a:hover {
 
 
 #basicinfo {
-	margin: 0px 0 0 175px;
-	line-height: 30px;
-	height: 287px;
-	width:225px;
+	margin: 0em 0 0 11em;
+	line-height: 1.5em;
+	height: 18em;
+	width:14em;
 	float:left;
-	padding: 5px;
-	border: 4px solid;
+	padding: 0.2em;
+	border: 0.3em solid;
 	border-color: white;
 	position: auto;
 	overflow: auto;
 	background-color: white;
 }
 
+
+
 #pic img {
-	margin: 0px 0 0 175px;
+	margin: 0em 0 0 11em;
 	height: auto;
-	width: 225px;
-	padding: 5px;
-	
-	border: 4px solid;
+	width: 14em;
+	padding: 0.2em;
+	border: 0.3em solid;
 	border-color: white;
-	margin-bottom: 10px;
+	margin-bottom: 1em;
 	background-image: url("upfeathers.png"), none;
 }
 
 #basicinfo li {
 	list-style: none;
 	color: #626867;
-	padding: 5px;
-	text-shadow: 2px 2px 8px #E6FFFB; 
-	font-size: 16px;
+	padding: 0.2em;
+	text-shadow: 1em 1em 3em #E6FFFB; 
+	font-size: 1em;
 }
 
 /*Box for portfolio*/
 #box {
-	margin-top: -177px;
+	margin-top: -11.1em;
 	position: auto;
-	margin-left: 450px;
-	width: 950px;
-	height: 475px;
-	border: 4px solid;
+	margin-left: 28em;
+	width: 60em;
+	height: 29.7em;
+	border: 0.3em solid;
 
 	position: relative;
 	border-color: white;
@@ -140,12 +141,12 @@ a:hover {
 
 /*Box for edit*/
 #box2 {
-	margin-top: -193px;
+	margin-top: -12.1em;
 	position: auto;
-	margin-left: 450px;
-	width: 950px;
-	height: 475px;
-	border: 4px solid;
+	margin-left: 28em;
+	width: 60em;
+	height: 29.7em;
+	border: 0.3em solid;
 
 	position: relative;
 	border-color: white;
@@ -166,12 +167,12 @@ a:hover {
 }
 
 #btn2 {
-	margin-left: 5px; 
+	margin-left: 0.2em; 
 }
 
 .btn {
 	margin-left: 55%;
-	margin-top: 10px;
+	margin-top: 1em;
 }
 
 

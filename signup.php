@@ -19,6 +19,10 @@
 			//Directory manipulation here
 			$dir = '.';
 			//mkdir()
+<<<<<<< HEAD
 			header("location: login.html");
+=======
+			header("location: index.php");
+>>>>>>> FETCH_HEAD
 			mysql_close($conn);
 			?>
