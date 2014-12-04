@@ -26,10 +26,16 @@
 	//Directory manipulation here
 	$index_file = './users/user1/index.php';
 	$edit_file = './users/user1/edit.php';
+	$database_file = './users/user1/database.php';
 	$new_index = './users/' . $user . '/index.php';
 	$new_edit = './users/' . $user . '/edit.php';
+	$new_database = './users/' . $user . '/database.php';
 	$userdir = './users/' . $user .'/';
+	$useruploads = './users/' . $user .'/uploads/';
 	if (!mkdir($userdir, 0777, true)) {
+    		die('Failed to create folders...');
+    	}
+    	if (!mkdir($useruploads, 0777, true)) {
     		die('Failed to create folders...');
     	}
     	if (!copy($index_file, $new_index)) {
@@ -38,7 +44,10 @@
 	if (!copy($edit_file, $new_edit)) {
     		echo "failed to copy $edit_file...\n";
 	}
+	if (!copy($database_file, $new_database)) {
+    		echo "failed to copy $database_file...\n";
+	}
 	header("location: index.php");
 	mysql_close($conn);
 
-			?>
+	?>
