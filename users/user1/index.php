@@ -22,6 +22,7 @@
 			<div id = "box">
 				<ul id="photos">
 				<?php
+				require 'database.php';
 				session_start();
 
 				$query = "SELECT tag FROM uploads";
@@ -29,7 +30,7 @@
 
 				while ($row = $result->fetch_object()) {
 					$img = $row->tag;
-					echo "<li>$img</li>"
+					echo "<li>$img</li>";
 				}
 				?>
 				</ul>
