@@ -53,17 +53,6 @@
             <?php
             require_once 'config.php';   
             require 'connection.php';
-            /*
-            try {
-              $dbname = 'olio';
-              $user = 'root';
-              $pass = '';
-              $connpdo = new PDO('mysql:host=localhost;dbname='.$dbname, $user, $pass);
-            }
-            catch (Exception $e) {
-              echo "Error: " . $e->getMessage();
-            }
-            */
             $login = $connpdo->prepare('SELECT username FROM users WHERE username=:username AND password=:pass');
             $login->execute(array(':username' => $username, ':pass' => $password));
             if ($user = $login->fetch()) {
