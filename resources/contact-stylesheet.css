@@ -40,8 +40,7 @@ body, ul, li {
 
 #settings img {
 	width: auto; 
-	height: 25px;
-	padding-top: 5px;
+	height: 1em;
 }
 #settings {
 	float: right !important;
@@ -49,7 +48,7 @@ body, ul, li {
 #settings span a {
 	text-transform: uppercase;
 	position:relative;
-	top:-3px;
+	top:-0.1em;
 	padding-left: 0.5em;
 }
 
