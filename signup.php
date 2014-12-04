@@ -20,7 +20,7 @@
 					<table>
 						<tr> 
 							<div id = "pic"><img src="./resources/Logolio.png" alt="Logo"></div>
-								<form action="code_exec.php" method="POST">
+								<form action="signup.php" method="POST">
 								<td>First Name:</td> <td> <input type="text" name="fname" required></td> </tr> 
 								<tr> <td>Last Name:</td> <td> <input type"text" name="lname" required></td> </tr>
 								<tr> <td>Middle Initial:</td> <td> <input type"text" name="mi" required></td> </tr>
