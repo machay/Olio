@@ -30,6 +30,7 @@ body, ul, li {
 	font-size: 1.5em;
 	float: left;
 	line-height: 1.5em;
+	margin-top: 1em;
 }
 
 #logo a {
@@ -74,18 +75,23 @@ a:hover {
 
 .titles {
 	text-align: center;
-	font-size: 35px;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
 p {
-	padding: 10px 250px;
-	font-size: 25px;
-	text-indent: 50px;
+	padding-left: 15%;
+	padding-right: 15%;
+	font-size: 1.8em;
+	text-indent: 1.5em;
 }
 
 #top{
-	margin-top: 140px
+	margin-top: 10%;
+}
+
+#bottom{
+	margin-bottom: 5%;
 }
 
 #paragraphs {
