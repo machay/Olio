@@ -23,3 +23,7 @@ Additional functionality I had planned to add but didn't have time:
 - Working slideshow
 - Ability to change photo order
 - Ability to delete photos from the database and file system
+
+Noah:
+When designing the back-end for our application I structured our users table in our olio database to take in relevant professional information and personal info in a case-by-case basis, meaning not all of the fields were required for a valid profile. 
+The more intense parts of the back-end work, all handled with PHP, come with the user creation; upon sign-up a folder on the user's installation is created under the given username and then dynamically filled with that user's starter files. This happens for every user, and upon each sign-up, a new table is created in our database to handle the user's uploaded files (understandably stored in an 'uploads' folder within the user's folder). While this does present some security flaws to our filestructure, and while I didn't have enough time to properly hash the passwords in our database, we do handle input parsing and guard against injection attacks. The back-end is a proof of concept, if a haphazard one. 
