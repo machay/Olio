@@ -9,7 +9,8 @@ Alyaz Mohamed
 Presentation: https://prezi.com/hnovgihbjaih/olio/
 (In case you'd rather not deal with the 50mb downloaded version of our presentation...that lacks
 powerpoint support.)
-====
+
+
 Ylonka: 
 I mostly worked on the project's front-end. I created the HTML skeletons with simple CSS. I decided to use HTML5 for part of the form handling.  It's really simple to make fields required, you simply slap a 'required' to the end of each input.  The new input type in HTML5, email,  
 requires users to submit valid emails in the form, not letting a user move forward with submission unless the email inputted includes an at sign (@). For styling, I used CSS/CSS3 for aesthetic purposes (border-radius allows for easy rounded borders, which we used for the information and portofolio divs.  I also wrote some PHP to connect to our database and create a table when a user signs up/alter table when a user edits their portfolio.  
@@ -34,3 +35,5 @@ Additional functionalities to implement in the future:
 - Not limiting a user to 5 images
 - More aesthetically pleasing view of pictures
 - Allowing users to upload headshots for portfolios
+- Allowing users to tag/caption their artwork 
+- Search functionality
