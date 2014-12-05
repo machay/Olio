@@ -7,6 +7,8 @@ Carolyn Lee
 Kevan Dupont
 Alyaz Mohamed
 Presentation: https://prezi.com/hnovgihbjaih/olio/
+(In case you'd rather not deal with the 50mb downloaded version of our presentation...that lacks
+powerpoint support.)
 ====
 So far, we've used HTML5 because of its form features. 
 (Can make fields required by simply adding 'required' to end of input tag, 'email' as a type of input, etc.)
