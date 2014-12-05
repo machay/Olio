@@ -26,6 +26,7 @@
 
 			<div id = "name">
 				<?php
+				//outputs user's name and makes it clickable to an email address
 				require 'database.php';
 				$user = $_SESSION["username"];
 				$query = "SELECT * FROM users";
@@ -43,7 +44,7 @@
 			<div id = "basicinfo">
 				<ul id = "Information">
 					<?php
-					//require 'database.php';
+					//outputs user's school and bio infor
 					$user = $_SESSION["username"];
 					$query = "SELECT * FROM users";
 					$result = $mysqli->query($query) or die(mysqli_error($mysqli));
@@ -55,17 +56,12 @@
 				echo "<li><a>$school</a></li>";
 				echo "<li><a>$bio</a></li>";
 				?>
-					<!--Tell the world a bit about yourself! What makes you special? What are you passionate about? Write it here! </li>
-					<!- \<li><span class = "info"> Institution: </span>Rensselaer Polytechnic Institute </li>
-					<li><span class = "info">Email: </span><a href="mailto:someone@example.com">someone@example.com</a></li> -->
 				</ul>
 			</div>
 			<div id="box">
 				<ul id="piclist">
 				<?php
-				//require 'database.php';
-				//session_start();
-
+				//outputs the images onto the page and into the box from the database
 				$user = $_SESSION["username"];
 				$query = "SELECT src FROM $user";
 				$result = $mysqli->query($query) or die(mysqli_error($mysqli));
@@ -76,6 +72,7 @@
 				}
 				?>
 				<script>
+				//applies lightbox functionality
 				$(function () {
 				    $('.pics').glisse({
 				        changeSpeed: 550, 
