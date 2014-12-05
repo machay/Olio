@@ -4,7 +4,7 @@ Ylonka Machado
 Ryan Gavin
 Noah Tebben
 Carolyn Lee
-Kevan Dupont
+Kevan DuPont
 Alyaz Mohamed
 Presentation: https://prezi.com/hnovgihbjaih/olio/
 (In case you'd rather not deal with the 50mb downloaded version of our presentation...that lacks
@@ -37,3 +37,8 @@ Additional functionalities to implement in the future:
 - Allowing users to upload headshots for portfolios
 - Allowing users to tag/caption their artwork 
 - Search functionality
+
+Kevan:
+We wanted to keep the design minimalistic and simple so that the viewer would focus on the artwork and not be distracted
+by the structure. However, we did not want the design to seem empty or bland since we are trying to attract artists. We
+solved this by using a stylish navigation bar and adding subtle background patterns.
